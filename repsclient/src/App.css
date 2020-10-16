@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+.imageCard{
+  height:450px;
+  box-shadow: 13px 9px 39px -23px rgba(0,0,0,0.75);
+}
+.textCard{
+  transform: translateX(-50%);
+  height:300px;
+  box-shadow: 13px 9px 39px -23px rgba(0,0,0,0.75);
+}
+.textCard3{
+  transform: translateX(-30%);
+  height:300px;
+  box-shadow: 13px 9px 39px -23px rgba(0,0,0,0.75);
+}
+.textCardContainer{
+  height:450px;
+}
+.textCardContainer2{
+  height:450px;
+}
+.textCard2{
+  transform: translateX(50%);
+  height:300px;
+  box-shadow: 13px 9px 39px -23px rgba(0,0,0,0.75);
+}
+.testimonialsContainer{
+  height:900px;
+  padding:40px;
+  box-shadow: -1px 0px 39px -6px rgba(0,0,0,0.75);
+}
+
+
+.gradientbackground{
+  background: rgb(43,246,239);
+  background: linear-gradient(180deg, rgba(43,246,239,1) 18%, rgba(131,58,180,1) 55%, rgba(60,60,59,1) 100%);
+}
+
+@media screen and (max-width: 992px) {
+  .testimonialsContainer{
+    height: auto;
+    padding:40px;
+    box-shadow: -1px 0px 39px -6px rgba(0,0,0,0.75);
+  }
+}

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecfdbfd9-ea3a-4c86-9d1d-040058c19ee9" name="Default Changelist" comment="" />
+    <list default="true" id="ecfdbfd9-ea3a-4c86-9d1d-040058c19ee9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/repsclient/public/card.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repsclient/public/eugenia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repsclient/public/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repsclient/public/side.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repsclient/src/tailwind.output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repsclient/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/repsclient/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repsclient/src/pages/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/repsclient/src/pages/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repsclient/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/repsclient/tailwind.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +37,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602176044090</updated>
       <workItem from="1602176052751" duration="145000" />
+      <workItem from="1602678087958" duration="106000" />
     </task>
     <servers />
   </component>
