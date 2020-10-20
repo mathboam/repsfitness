@@ -66,17 +66,43 @@
   padding:40px;
   box-shadow: -1px 0px 39px -6px rgba(0,0,0,0.75);
 }
-
+.header{
+  font-size: 800px;
+}
 
 .gradientbackground{
   background: rgb(43,246,239);
   background: linear-gradient(180deg, rgba(43,246,239,1) 18%, rgba(131,58,180,1) 55%, rgba(60,60,59,1) 100%);
 }
+.cardboard{
+  height: 950px;
+}
+.pictureCollage{
+  box-shadow: 10px 10px 17px -9px rgba(0,0,0,0.75);
+}
+.pictureCollage2{
+  box-shadow: 2px 4px 51px -14px rgba(0,0,0,0.75);
+}
 
+.banner{
+  height:800px;
+  background-image: url("/banner2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
 @media screen and (max-width: 992px) {
   .testimonialsContainer{
     height: auto;
     padding:40px;
     box-shadow: -1px 0px 39px -6px rgba(0,0,0,0.75);
+  }
+  .cardboard{
+    height:400px;
+  }
+  .banner{
+    height:500px;
+    background-image: url("/banner2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
