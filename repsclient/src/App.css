@@ -84,6 +84,11 @@
   box-shadow: 2px 4px 51px -14px rgba(0,0,0,0.75);
 }
 
+.sideBanner{
+  height: 650px;
+  box-shadow: 13px 9px 39px -23px rgba(0,0,0,0.75);
+}
+
 .banner{
   height:800px;
   background-image: url("/banner2.jpg");
@@ -105,4 +110,8 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  .sideBanner{
+    height: 350px;
+  }
+
 }

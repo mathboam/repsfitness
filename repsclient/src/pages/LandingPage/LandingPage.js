@@ -27,7 +27,7 @@ export default function LandingPage() {
                   className="sm:text-center lg:text-left"
                   data-aos={"fade-right"}
                 >
-                  <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-5xl">
+                  <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-5xltext-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-5xl">
                     Reps Fitness Ghana's Member's Online
                     <br className="xl:hidden" />
                     <br className="xl:hidden" />

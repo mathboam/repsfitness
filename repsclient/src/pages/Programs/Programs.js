@@ -23,21 +23,19 @@ export default function Programs(props) {
               Programs
             </h1>
             <p className="text-xl tracking-wide z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-5xl">
-              Reps fitness got lots of programs to get you started for your
-              weight loss adventures
+              You cannot fail on this program unless you fail the program!!!!!
             </p>
           </div>
         </div>
-
         {/*monthly section*/}
-        <div>
+        <div data-aos={"fade-up"}>
           <div className={"justify-center items-center flex mt-12 flex-col"}>
             <h1
               className={
-                "xl:text-6xl tracking-widest header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-5xl sm:leading-none md:text-5xl"
+                "xl:text-6xl tracking-widest text-center header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-5xl sm:leading-none md:text-5xl"
               }
             >
-              Monthly Challenges
+              Monthly Marathon Challenges
             </h1>
 
             <p
@@ -71,71 +69,225 @@ export default function Programs(props) {
                 "xl:text-6xl tracking-widest header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-5xl sm:leading-none md:text-5xl"
               }
             >
-              Walkathons
+              Walk-a-thon
             </h1>
-
-            <div
+            {/*walkathon text*/}
+            <p
               className={
-                "pictureCollage justify-center p-1 items-center flex-wrap w-11/12 xl:w-11/12 md:w-full h-auto sm:space-x-0 md:space-x-2 xl:space-x-2 z-30 flex mt-12 bg-blue rounded-lg"
+                "mt-12 p-4 text-gray-600 text-center tracking-wider leading-loose"
+              }
+            >
+              Our daily stepping challenges prepare you for our amazing 24 hr.
+              Walk-a-thon. Walking is the easiest and most effective way to burn
+              fat without losing muscles. Our members were shocked to see they
+              could literally walk off the fat in weeks. One of our walkathon
+              champion, who hated walking and drove everywhere at the start of
+              the program walked 26 miles in a day and shredded 2kgs of fat over
+              night and he is now addicted to walking.
+            </p>
+            <div
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className={
+                "pictureCollage justify-center p-1 items-center flex-wrap w-11/12 xl:w-11/12 md:w-full h-auto sm:space-x-0 md:space-x-2 xl:space-x-2 z-30 flex mt-12 bg-gray-800 rounded-lg"
               }
             >
               <div
                 className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                  "xl:w-1/5 relative m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                }
+              >
+                <img src={"./e1.jpg"} className={"w-full h-64 rounded-lg"} />
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  Wear Correct Footwears
+                </p>
+              </div>
+              <div
+                className={
+                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
                 }
               >
                 <img
-                  src={"./smallbanner.jpg"}
+                  src={"./walkere.jpg"}
                   className={"w-full h-64 rounded-lg"}
                 />
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  With Pets
+                </p>
               </div>{" "}
               <div
                 className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                  "xl:w-1/5 m-1 lg:w-1/4 relative md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
                 }
               >
                 <img
-                  src={"./smallbanner.jpg"}
+                  src={"./beach2.jpg"}
                   className={"w-full h-64 rounded-lg"}
                 />
-              </div>{" "}
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  With Loved Ones
+                </p>
+              </div>
               <div
                 className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
                 }
               >
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  In The house
+                </p>
                 <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>{" "}
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
+                  src={"./walkathon.jpg"}
                   className={"w-full h-64 rounded-lg"}
                 />
               </div>
               <div
                 className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
                 }
               >
                 <img
-                  src={"./smallbanner.jpg"}
+                  src={"./groupwalk.jpg"}
+                  className={"w-full h-64 rounded-lg"}
+                />
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  With Friends
+                </p>
+              </div>
+              <div
+                className={
+                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                }
+              >
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  Water Is Essential
+                </p>
+                <img
+                  src={"./walkerr.jpg"}
                   className={"w-full h-64 rounded-lg"}
                 />
               </div>
               <div
                 className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
                 }
               >
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  On The Treadmills
+                </p>
                 <img
-                  src={"./smallbanner.jpg"}
+                  src={"./treadmill2.jpg"}
+                  className={"w-full h-64 rounded-lg"}
+                />
+              </div>
+              <div
+                className={
+                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                }
+              >
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  Essential tools
+                </p>
+                <img
+                  src={"./pedometerapp.png"}
+                  className={"w-full h-64 rounded-lg"}
+                />
+              </div>
+              <div
+                className={
+                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                }
+              >
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  While shopping
+                </p>
+                <img
+                  src={"./shopping3.jpg"}
+                  className={"w-full h-64 rounded-lg"}
+                />
+              </div>
+              <div
+                className={
+                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                }
+              >
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  With The Baby
+                </p>
+                <img src={"./preg2.jpg"} className={"w-full h-64 rounded-lg"} />
+              </div>
+              <div
+                className={
+                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                }
+              >
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  With The Kids
+                </p>
+                <img
+                  src={"./shopping.jpg"}
+                  className={"w-full h-64 rounded-lg"}
+                />
+              </div>
+              <div
+                className={
+                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                }
+              >
+                <p
+                  className={
+                    "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
+                  }
+                >
+                  With The Kids
+                </p>
+                <img
+                  src={"./shopping.jpg"}
                   className={"w-full h-64 rounded-lg"}
                 />
               </div>
@@ -143,7 +295,10 @@ export default function Programs(props) {
           </div>
 
           {/*skeippathons*/}
-          <div className={"justify-center items-center flex mt-12 flex-col"}>
+          <div
+            className={"justify-center items-center flex mt-12 flex-col"}
+            data-aos={"fade-up"}
+          >
             <h1
               className={
                 "xl:text-6xl tracking-widest header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-5xl sm:leading-none md:text-5xl"
@@ -151,70 +306,51 @@ export default function Programs(props) {
             >
               Skipathons
             </h1>
-
             <div
               className={
-                "pictureCollage xl:w-11/12 justify-center p-1 items-center flex-wrap w-11/12 md:w-full h-auto sm:space-x-0 md:space-x-2 xl:space-x-2 z-30 flex mt-12 bg-blue rounded-lg"
+                "flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row p-2 sm:p-2 md:p-2 lg:p-12 xl:p-12 space-x-0 space-y-6 sm:space-x-0 sm:space-y-6 md:space-x-0 md:space-y-6 lg:space-x-12 xl:space-x-12"
               }
+              data-aos={"fade-up"}
             >
               <div
                 className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                  "w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 flex justify-center items-center"
                 }
               >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>{" "}
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>{" "}
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>{" "}
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
+                <p
+                  className={
+                    "mt-12 text-gray-600 text-left tracking-wider leading-loose"
+                  }
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Alias architecto commodi consequuntur dignissimos dolores
+                  eligendi eveniet ex explicabo laudantium, magni minima neque
+                  nostrum odio rem, repellat repudiandae ullam ut veritatis?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dignissimos inventore itaque iure officiis sequi? Atque
+                  distinctio eaque iste, odio rem reprehenderit sunt!
+                  Exercitationem facere hic magni, nulla odit officiis
+                  rerum.Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Alias architecto commodi consequuntur dignissimos
+                  dolores eligendi eveniet ex explicabo laudantium, magni minima
+                  neque nostrum odio rem, repellat repudiandae ullam ut
+                  veritatis? Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Dignissimos inventore itaque iure officiis sequi? Atque
+                  distinctio eaque iste, odio rem reprehenderit sunt!
+                  Exercitationem facere hic magni, nulla odit officiis rerum.
+                  sunt! Exercitationem facere hic magni, nulla odit officiis
+                  rerum.
+                </p>
               </div>
               <div
+                data-aos={"fade-up"}
                 className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                  "bg-gray-800 w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 rounded-lg sideBanner"
                 }
               >
                 <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
+                  src={"./stepapp.jpg"}
+                  className={"w-full h-full rounded-lg"}
                 />
               </div>
             </div>
@@ -223,7 +359,7 @@ export default function Programs(props) {
           <div className={"justify-center items-center flex mt-12 flex-col"}>
             <h1
               className={
-                "xl:text-6xl tracking-widest header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-5xl sm:leading-none md:text-5xl"
+                "xl:text-2xl tracking-widest header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-2xl sm:leading-none md:text-2xl"
               }
             >
               And Many More.....
@@ -427,7 +563,7 @@ export default function Programs(props) {
           <div className={"justify-center items-center flex mt-12 flex-col"}>
             <h1
               className={
-                "xl:text-6xl tracking-widest header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-5xl sm:leading-none md:text-5xl"
+                "xl:text-2xl tracking-widest header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-2xl sm:leading-none md:text-2xl"
               }
             >
               And Many More.....
@@ -480,6 +616,29 @@ export default function Programs(props) {
             >
               Stepping Challenges
             </h1>
+
+            {/*walkathon text*/}
+            <p
+              className={
+                "mt-12 p-4 text-gray-600 font-extrabold text-xl text-center tracking-wider leading-loose"
+              }
+            >
+              You DO NOT exercise on our program you are only encouraged to
+              walk!!!.
+            </p>
+            <p
+              className={
+                "mt-0 p-4 text-gray-600 text-center tracking-wider leading-loose"
+              }
+            >
+              We have daily challenges that will motivate you to get up out of
+              your chair and do the most natural thing known to man to man,
+              which is to walk. This stepping program will make you realise that
+              all the sweating and jumping CANNOT burn fat as amazingly as our
+              walking program. That’s why this young lady in UK, who lost 12kg
+              on our program in six weeks, sent us this picture and message on a
+              freezing cold day in UK.
+            </p>
 
             <div
               className={
@@ -553,7 +712,7 @@ export default function Programs(props) {
           <div className={"justify-center items-center flex mt-12 flex-col"}>
             <h1
               className={
-                "xl:text-6xl tracking-widest header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-5xl sm:leading-none md:text-5xl"
+                "xl:text-2xl tracking-widest header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-2xl sm:leading-none md:text-2xl"
               }
             >
               And Many More.....
