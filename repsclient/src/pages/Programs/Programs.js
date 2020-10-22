@@ -14,18 +14,33 @@ export default function Programs(props) {
           }
           data-aos={"fade-up"}
         >
-          <div
+          <div className={"w-full h-full bg-gray-800 flex flex-row"}>
+            <img src={"./blk1.jpg"} className={"h-auto"} />
+            <img src={"./de.jpg"} className={"h-auto w-full"} />
+          </div>
+          <h1
             className={
-              "absolute flex-col flex justify-center items-center space-y-12"
+              "xl:text-4xl absolute left-0 bottom-0 tracking-widest text-center header text-2xl tracking-tight z-20 leading-10 font-extrabold text-blue sm:text-5xl sm:leading-none md:text-bold"
             }
           >
-            <h1 className="xl:text-6xl text-4xl tracking-widest header tracking-tight z-20 leading-10 font-extrabold text-white sm:text-4xl sm:leading-none md:text-5xl">
-              Programs
-            </h1>
-            <p className="text-xl tracking-wide z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-5xl">
-              You cannot fail on this program unless you fail the program!!!!!
-            </p>
-          </div>
+            Stepping
+          </h1>
+          <h1
+            className={
+              "xl:text-4xl absolute right-0 bottom-0  tracking-widest text-center header text-2xl tracking-tight z-20 leading-10 font-extrabold text-blue sm:text-5xl sm:leading-none md:text-bold"
+            }
+          >
+            Prepping
+          </h1>
+        </div>
+        <div
+          className={
+            "flex-col flex justify-center items-center space-y-12 mt-24"
+          }
+        >
+          <p className="text-lg tracking-wide z-20 leading-10 font-medium text-center text-blue sm:text-sm sm:leading-none md:text-4xl lg:text-3xl xl:text-4xl font-bold">
+            You cannot fail on this program unless you fail the program!!!!!
+          </p>
         </div>
         {/*monthly section*/}
         <div data-aos={"fade-up"}>
@@ -85,214 +100,171 @@ export default function Programs(props) {
               the program walked 26 miles in a day and shredded 2kgs of fat over
               night and he is now addicted to walking.
             </p>
-            <div
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-              className={
-                "pictureCollage justify-center p-1 items-center flex-wrap w-11/12 xl:w-11/12 md:w-full h-auto sm:space-x-0 md:space-x-2 xl:space-x-2 z-30 flex mt-12 bg-gray-800 rounded-lg"
-              }
-            >
-              <div
-                className={
-                  "xl:w-1/5 relative m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img src={"./e1.jpg"} className={"w-full h-64 rounded-lg"} />
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  Wear Correct Footwears
-                </p>
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./walkere.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  With Pets
-                </p>
-              </div>{" "}
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 relative md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./beach2.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  With Loved Ones
-                </p>
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  In The house
-                </p>
-                <img
-                  src={"./walkathon.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./groupwalk.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  With Friends
-                </p>
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  Water Is Essential
-                </p>
-                <img
-                  src={"./walkerr.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  On The Treadmills
-                </p>
-                <img
-                  src={"./treadmill2.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  Essential tools
-                </p>
-                <img
-                  src={"./pedometerapp.png"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  While shopping
-                </p>
-                <img
-                  src={"./shopping3.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  With The Baby
-                </p>
-                <img src={"./preg2.jpg"} className={"w-full h-64 rounded-lg"} />
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  With The Kids
-                </p>
-                <img
-                  src={"./shopping.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <p
-                  className={
-                    "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"
-                  }
-                >
-                  With The Kids
-                </p>
-                <img
-                  src={"./shopping.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
+            <div>
+              <div className={"w-"}></div>
             </div>
+            {/*<div*/}
+            {/*  data-aos="fade-right"*/}
+            {/*  data-aos-offset="300"*/}
+            {/*  data-aos-easing="ease-in-sine"*/}
+            {/*  className={*/}
+            {/*    "pictureCollage justify-center p-1 items-center flex-wrap w-11/12 xl:w-11/12 md:w-full h-auto sm:space-x-0 md:space-x-2 xl:space-x-2 z-30 flex mt-12 bg-gray-800 rounded-lg"*/}
+            {/*  }*/}
+            {/*>*/}
+            {/*  <div*/}
+            {/*    className={*/}
+            {/*      "xl:w-1/5 relative m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    <img src={"./e1.jpg"} className={"w-full h-64 rounded-lg"} />*/}
+            {/*    <p*/}
+            {/*      className={*/}
+            {/*        "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"*/}
+            {/*      }*/}
+            {/*    >*/}
+            {/*      Wear Correct Footwears*/}
+            {/*    </p>*/}
+            {/*  </div>*/}
+            {/*  <div*/}
+            {/*    className={*/}
+            {/*      "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    <img*/}
+            {/*      src={"./walkere.jpg"}*/}
+            {/*      className={"w-full h-64 rounded-lg"}*/}
+            {/*    />*/}
+            {/*    <p*/}
+            {/*      className={*/}
+            {/*        "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"*/}
+            {/*      }*/}
+            {/*    >*/}
+            {/*      With Pets*/}
+            {/*    </p>*/}
+            {/*  </div>{" "}*/}
+            {/*  <div*/}
+            {/*    className={*/}
+            {/*      "xl:w-1/5 m-1 lg:w-1/4 relative md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    <img*/}
+            {/*      src={"./beach2.jpg"}*/}
+            {/*      className={"w-full h-64 rounded-lg"}*/}
+            {/*    />*/}
+            {/*    <p*/}
+            {/*      className={*/}
+            {/*        "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"*/}
+            {/*      }*/}
+            {/*    >*/}
+            {/*      With Loved Ones*/}
+            {/*    </p>*/}
+            {/*  </div>*/}
+            {/*  <div*/}
+            {/*    className={*/}
+            {/*      "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    <p*/}
+            {/*      className={*/}
+            {/*        "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"*/}
+            {/*      }*/}
+            {/*    >*/}
+            {/*      In The house*/}
+            {/*    </p>*/}
+            {/*    <img*/}
+            {/*      src={"./walkathon.jpg"}*/}
+            {/*      className={"w-full h-64 rounded-lg"}*/}
+            {/*    />*/}
+            {/*  </div>*/}
+            {/*  <div*/}
+            {/*    className={*/}
+            {/*      "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    <img*/}
+            {/*      src={"./groupwalk.jpg"}*/}
+            {/*      className={"w-full h-64 rounded-lg"}*/}
+            {/*    />*/}
+            {/*    <p*/}
+            {/*      className={*/}
+            {/*        "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"*/}
+            {/*      }*/}
+            {/*    >*/}
+            {/*      With Friends*/}
+            {/*    </p>*/}
+            {/*  </div>*/}
+            {/*  <div*/}
+            {/*    className={*/}
+            {/*      "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    <p*/}
+            {/*      className={*/}
+            {/*        "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"*/}
+            {/*      }*/}
+            {/*    >*/}
+            {/*      On The Treadmills*/}
+            {/*    </p>*/}
+            {/*    <img*/}
+            {/*      src={"./treadmill2.jpg"}*/}
+            {/*      className={"w-full h-64 rounded-lg"}*/}
+            {/*    />*/}
+            {/*  </div>*/}
+            {/*  <div*/}
+            {/*    className={*/}
+            {/*      "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    <p*/}
+            {/*      className={*/}
+            {/*        "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"*/}
+            {/*      }*/}
+            {/*    >*/}
+            {/*      Essential tools*/}
+            {/*    </p>*/}
+            {/*    <img*/}
+            {/*      src={"./pedometerapp.png"}*/}
+            {/*      className={"w-full h-64 rounded-lg"}*/}
+            {/*    />*/}
+            {/*  </div>*/}
+            {/*  <div*/}
+            {/*    className={*/}
+            {/*      "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    <p*/}
+            {/*      className={*/}
+            {/*        "absolute rounded-tl-lg bg-gray-800 p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-200 sm:text-sm sm:leading-none md:text-2xl"*/}
+            {/*      }*/}
+            {/*    >*/}
+            {/*      While shopping*/}
+            {/*    </p>*/}
+            {/*    <img*/}
+            {/*      src={"./shopping3.jpg"}*/}
+            {/*      className={"w-full h-64 rounded-lg"}*/}
+            {/*    />*/}
+            {/*  </div>*/}
+            {/*  <div*/}
+            {/*    className={*/}
+            {/*      "xl:w-1/5 m-1 relative lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    <p*/}
+            {/*      className={*/}
+            {/*        "absolute rounded-tl-lg bg-blue p-2 top-0 left-0 text-sm tracking-tight z-20 leading-10 font-medium text-center text-gray-800 text-gray-200 sm:text-sm sm:leading-none md:text-2xl"*/}
+            {/*      }*/}
+            {/*    >*/}
+            {/*      With The Kids*/}
+            {/*    </p>*/}
+            {/*    <img*/}
+            {/*      src={"./shopping.jpg"}*/}
+            {/*      className={"w-full h-64 rounded-lg"}*/}
+            {/*    />*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </div>
+
+          <hr className={"my-12"} />
 
           {/*skeippathons*/}
           <div
@@ -413,71 +385,52 @@ export default function Programs(props) {
             >
               Weight-Ins
             </h1>
-
             <div
               className={
-                "pictureCollage xl:w-11/12 justify-center p-1 items-center flex-wrap w-11/12 md:w-full h-auto sm:space-x-0 md:space-x-2 xl:space-x-2 z-30 flex mt-12 bg-gray-800 rounded-lg"
+                "flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row p-2 sm:p-2 md:p-2 lg:p-12 xl:p-12 space-x-0 space-y-6 sm:space-x-0 sm:space-y-6 md:space-x-0 md:space-y-6 lg:space-x-12 xl:space-x-12"
               }
+              data-aos={"fade-up"}
             >
               <div
+                data-aos={"fade-up"}
                 className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                  "bg-gray-800 w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 rounded-lg sideBanner"
                 }
               >
                 <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>{" "}
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>{" "}
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>{" "}
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
+                  src={"./scales.jpg"}
+                  className={"w-full h-full rounded-lg"}
                 />
               </div>
               <div
                 className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
+                  "w-full sm:w-full md:w-full lg:w-1/2 xl:w-1/2 flex justify-center items-center"
                 }
               >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
+                <p
+                  className={
+                    "mt-12 text-gray-600 text-left tracking-wider leading-loose"
+                  }
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Alias architecto commodi consequuntur dignissimos dolores
+                  eligendi eveniet ex explicabo laudantium, magni minima neque
+                  nostrum odio rem, repellat repudiandae ullam ut veritatis?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dignissimos inventore itaque iure officiis sequi? Atque
+                  distinctio eaque iste, odio rem reprehenderit sunt!
+                  Exercitationem facere hic magni, nulla odit officiis
+                  rerum.Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Alias architecto commodi consequuntur dignissimos
+                  dolores eligendi eveniet ex explicabo laudantium, magni minima
+                  neque nostrum odio rem, repellat repudiandae ullam ut
+                  veritatis? Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Dignissimos inventore itaque iure officiis sequi? Atque
+                  distinctio eaque iste, odio rem reprehenderit sunt!
+                  Exercitationem facere hic magni, nulla odit officiis rerum.
+                  sunt! Exercitationem facere hic magni, nulla odit officiis
+                  rerum.
+                </p>
               </div>
             </div>
           </div>
@@ -491,72 +444,33 @@ export default function Programs(props) {
             >
               Group And Solo Consultations
             </h1>
-
-            <div
+            <p
               className={
-                "pictureCollage justify-center p-1 items-center flex-wrap w-11/12 md:w-full xl:w-11/12 h-auto sm:space-x-0 md:space-x-2 xl:space-x-2 z-30 flex mt-12 bg-gray-800 rounded-lg"
+                "mt-12 text-gray-600 text-center tracking-wider leading-loose"
               }
             >
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>{" "}
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>{" "}
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>{" "}
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
-              <div
-                className={
-                  "xl:w-1/5 m-1 lg:w-1/4 md:w-1/3 w-full sm:w-full h-64 bg-black z-40 rounded-lg"
-                }
-              >
-                <img
-                  src={"./smallbanner.jpg"}
-                  className={"w-full h-64 rounded-lg"}
-                />
-              </div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+              architecto commodi consequuntur dignissimos dolores eligendi
+              eveniet ex explicabo laudantium, magni minima neque nostrum odio
+              rem, repellat repudiandae ullam ut veritatis? Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Dignissimos inventore
+              itaque iure officiis sequi? Atque distinctio eaque iste, odio rem
+              reprehenderit sunt! Exercitationem facere hic magni, nulla odit
+              officiis rerum.Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Alias architecto commodi consequuntur dignissimos dolores
+              eligendi eveniet ex explicabo laudantium, magni minima neque
+              nostrum odio rem, repellat repudiandae ullam ut veritatis? Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
+              inventore itaque iure officiis sequi? Atque distinctio eaque iste,
+              odio rem reprehenderit sunt! Exercitationem facere hic magni,
+              nulla odit officiis rerum. sunt! Exercitationem facere hic magni,
+              nulla odit officiis rerum.
+            </p>
+            <div
+              data-aos={"fade-up"}
+              className={"w-4/5 centerBanner bg-gray-800 rounded-lg mt-12 z-50"}
+            >
+              <img src={"coach.jpg"} className={"w-full h-full rounded-lg"} />
             </div>
           </div>
           {/*  many more */}
@@ -611,10 +525,10 @@ export default function Programs(props) {
           <div className={"justify-center items-center flex mt-12 flex-col"}>
             <h1
               className={
-                "xl:text-6xl tracking-widest header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-5xl sm:leading-none md:text-5xl"
+                "xl:text-4xl tracking-widest header text-2xl tracking-tight z-20 leading-10 font-bold text-gray-600 sm:text-2xl sm:leading-none md:text-4xl"
               }
             >
-              Stepping Challenges
+              Stepping & Prepping Programs
             </h1>
 
             {/*walkathon text*/}
