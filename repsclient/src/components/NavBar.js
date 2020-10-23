@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 
 export default function NavBar({ toggler, setToggler }) {
   const currentUrl = useParams();
+  const [toggleMiniNav, setToggleMiniNav] = useState(false);
+
   console.log(currentUrl);
   const [url, setUrl] = useState("");
   return (
@@ -12,7 +14,7 @@ export default function NavBar({ toggler, setToggler }) {
           <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               <button
-                onClick={() => setToggler(!toggler)}
+                onClick={() => setToggleMiniNav(!toggleMiniNav)}
                 className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
                 aria-label="Main menu"
                 aria-expanded="false"
@@ -75,7 +77,7 @@ export default function NavBar({ toggler, setToggler }) {
                 <div className={"flex flex-row justify-center items-center"}>
                   <Link
                     to={"/programs"}
-                    className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-blue hover:bg-gray-700 focus:outline-none focus:text- focus:bg-gray-700 transition duration-150 ease-in-out"
+                    className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text- focus:bg-gray-700 transition duration-150 ease-in-out"
                   >
                     Programs
                   </Link>
@@ -83,7 +85,7 @@ export default function NavBar({ toggler, setToggler }) {
                 <div className={"flex flex-row justify-center items-center"}>
                   <Link
                     to={"/lifecoaching"}
-                    className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-blue hover:bg-gray-700 focus:outline-none focus:text-blue focus:bg-gray-700 transition duration-150 ease-in-out"
+                    className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out"
                   >
                     Life Coaching
                   </Link>
@@ -91,7 +93,7 @@ export default function NavBar({ toggler, setToggler }) {
                 <div className={"flex flex-row justify-center items-center"}>
                   <Link
                     to={"/accountability"}
-                    className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-blue hover:bg-gray-700 focus:outline-none focus:text-blue focus:bg-gray-700 transition duration-150 ease-in-out"
+                    className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out"
                   >
                     Accountability
                   </Link>
@@ -100,7 +102,7 @@ export default function NavBar({ toggler, setToggler }) {
                   <Link
                     to={"/testimonials"}
                     href="#"
-                    className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-blue hover:bg-gray-700 focus:outline-none focus:text-blue focus:bg-gray-700 transition duration-150 ease-in-out"
+                    className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out"
                   >
                     Testimonies
                   </Link>
@@ -113,8 +115,8 @@ export default function NavBar({ toggler, setToggler }) {
                     to={"/support"}
                     className={
                       url == "support"
-                        ? "text-black px-3 text-blue py-2 rounded-md text-sm font-medium leading-5 hover:text-blue hover:bg-gray-700 focus:outline-none focus:text-blue focus:bg-gray-700 transition duration-150 ease-in-out bg-gray-700"
-                        : "text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-blue hover:bg-gray-700 focus:outline-none focus:text-blue focus:bg-gray-700 transition duration-150 ease-in-out"
+                        ? "text-black px-3 text-teal-400 py-2 rounded-md text-sm font-medium leading-5 hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out bg-gray-700"
+                        : "text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out"
                     }
                   >
                     Support Services
@@ -125,26 +127,29 @@ export default function NavBar({ toggler, setToggler }) {
           </div>
         </div>
 
-        <div className="hidden sm:hidden">
+        <div
+          className={`hidden sm:hidden bg-gray-800`}
+          style={{ display: toggleMiniNav ? "block" : "none" }}
+        >
           <div className="px-2 pt-2 pb-3">
-            <a
-              href="#"
+            <Link
+              to={"/"}
               className="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to={"/programs"}
               className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
             >
-              Team
-            </a>
-            <a
-              href="#"
+              Programs
+            </Link>
+            <Link
+              to={"/support"}
               className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
             >
-              Projects
-            </a>
+              Support Services
+            </Link>
             <a
               href="#"
               className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"

@@ -37,6 +37,9 @@ function App() {
           <Route path={"/accountability"}>
             <Accountability />
           </Route>
+          <Route path={"/meals"}>
+            <Accountability />
+          </Route>
         </Switch>
       </Router>
     </React.Fragment>

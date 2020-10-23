@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import NavBar from "../../components/NavBar";
+import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import Footer from "../../components/Footer";
 export default function LandingPage() {
   const images = ["./test2.jpg", "./test3.jpg", "./test4.jpg", "./test6.jpg"];
-  const [toggleMiniNav, setToggleMiniNav] = useState(false);
   return (
     <React.Fragment>
-      <NavBar toggler={toggleMiniNav} setToggler={setToggleMiniNav} />
+      <NavBar />
       <div class="relative overflow-hidden mt-2">
         <div class="max-w-screen-xl mx-auto ">
           <div class="relative  z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -35,50 +35,50 @@ export default function LandingPage() {
                   </h2>
                   <p className="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                     Reps Fitness is an{" "}
-                    <a
-                      href={"https://google.com"}
+                    <Link
+                      to={"/programs"}
                       className={"text-blue hover:underline"}
                     >
                       Online Diet
-                    </a>{" "}
+                    </Link>{" "}
                     and{" "}
-                    <a
+                    <Link
                       href={"https://google.com"}
                       className={"text-blue hover:underline"}
                     >
                       Health
-                    </a>{" "}
+                    </Link>{" "}
                     Club Our members* have activities.{" "}
-                    <a
+                    <Link
                       href={"https://google.com"}
                       className={"text-blue hover:underline"}
                     >
                       Programs
-                    </a>{" "}
-                    and{" "}
-                    <a
+                    </Link>
+                    and
+                    <Link
                       href={"https://google.com"}
                       className={"text-blue hover:underline"}
                     >
                       consultations
-                    </a>{" "}
+                    </Link>
                     that keeps them motivated and{" "}
-                    <a
+                    <Link
                       href={"https://google.com"}
                       className={"text-blue hover:underline"}
                     >
                       accountable
-                    </a>{" "}
+                    </Link>
                     on a daily basis.
                     <br />
                     <br />
                     We have a limit of 50{" "}
-                    <a
+                    <Link
                       href={"https://google.com"}
                       className={"text-blue hover:underline"}
                     >
                       members
-                    </a>{" "}
+                    </Link>
                     who * will walk the walk * with you. At Reps, we want you to
                     learn how to take control of your habits in order to live a
                     healthy life and have a piece of mind where your weight is
@@ -87,88 +87,24 @@ export default function LandingPage() {
                   </p>
                   <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                     <div className="rounded-md shadow" data-aos={"fade-up"}>
-                      <a
+                      <Link
                         href="#"
                         className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-blue hover:bg-blue focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                       >
                         Get started
-                      </a>
+                      </Link>
                     </div>
                     <div className="mt-3 sm:mt-0 sm:ml-3" data-aos={"fade-up"}>
-                      <a
-                        href="#"
+                      <Link
+                        to={"/programs"}
                         className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue bg-gray-900 hover:text-white hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                       >
                         Read More
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </main>
-            </div>
-
-            <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-              <div class="rounded-lg shadow-md">
-                <div
-                  class="rounded-lg bg-white shadow-xs overflow-hidden"
-                  role="menu"
-                  aria-orientation="vertical"
-                  aria-labelledby="main-menu"
-                  style={{ display: toggleMiniNav ? "block" : "none" }}
-                >
-                  <div class="px-5 pt-4 flex items-center justify-between">
-                    <div></div>
-                    <div class="-mr-2">
-                      <button
-                        type="button"
-                        onClick={() => setToggleMiniNav(!toggleMiniNav)}
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
-                        aria-label="Close menu"
-                      >
-                        <svg
-                          class="h-6 w-6"
-                          stroke="currentColor"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="px-2 pt-2 pb-3">
-                    <a
-                      href="#"
-                      className="font-medium text-gray-700 hover:text-blue transition duration-150 ease-in-out"
-                    >
-                      Programs
-                    </a>
-                    <a
-                      href="#"
-                      className="ml-8 font-medium text-gray-700 hover:text-blue transition duration-150 ease-in-out"
-                    >
-                      Life Coaching
-                    </a>
-                    <a
-                      href="#"
-                      className="ml-8 font-medium text-gray-700 hover:text-blue transition duration-150 ease-in-out"
-                    >
-                      Accountability
-                    </a>
-                    <a
-                      href="#"
-                      className="ml-8 font-medium text-gray-700 hover:text-blue transition duration-150 ease-in-out"
-                    >
-                      Testimonials
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -197,129 +133,145 @@ export default function LandingPage() {
           }
           data-aos={"fade-up"}
         >
-          <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-5xl">
+          <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-white sm:text-5xl sm:leading-none md:text-5xl">
             Programs
           </h2>
         </div>
-        <div className={"flex p-10 flex-col"}>
+        <div className={"flex p-2 flex-col"}>
           {/*Meal Plan section */}
           <div className={"flex flex-row"} data-aos="fade-right">
-            <div className={"w-auto z-30 h-auto rounded-md"}>
-              <img src={"./dit.jpg"} className={"imageCard rounded-md"} />
-            </div>
-            <div className={"w-1/3 z-30 textCardContainer flex items-center"}>
-              <div
+            <div className={"w-full z-30 h-auto rounded-md"}>
+              <h1
                 className={
-                  "textCard w-4/5 z-40 bg-white justify-center items-center p-5"
+                  "xl:text-2xl absolute bottom-0 right-0 tracking-widest text-right bg-purple-400 rounded-lg p-2 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
                 }
               >
-                <h2
-                  className={
-                    "text-xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-xl"
-                  }
-                >
-                  Meal Plans
-                </h2>
-                <p className={"text-left font-medium text-gray-700 mt-5"}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dicta eius, temporibus. Animi dicta eaque inventore
-                  recusandae. Doloribus illum laboriosam non quasi recusandae?
-                  Beatae consequuntur, cupiditate eos explicabo perspiciatis
-                  reprehenderit voluptatum.
-                </p>
-              </div>
+                ReadMore
+              </h1>
+              <img src={"./dit.jpg"} className={"imageCard rounded-md"} />
             </div>
-            <div className="mt-3 sm:mt-0 sm:ml-3 flex justify-center items-center">
-              <a
-                href="#"
-                className="w-full z-30 flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-bold rounded-md text-gray-900 bg-white hover:text-darkblue hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-              >
-                Read More
-              </a>
-            </div>
+            {/*<div*/}
+            {/*  className={*/}
+            {/*    "w-1/3 hidden md:hidden lg:hidden xl:block z-30 textCardContainer flex items-center"*/}
+            {/*  }*/}
+            {/*>*/}
+            {/*  <div*/}
+            {/*    className={*/}
+            {/*      "textCard w-4/5 z-40 bg-white justify-center items-center p-5"*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    <h2*/}
+            {/*      className={*/}
+            {/*        "text-xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-xl"*/}
+            {/*      }*/}
+            {/*    >*/}
+            {/*      Meal Plans*/}
+            {/*    </h2>*/}
+            {/*    <p className={"text-left font-medium text-gray-700 mt-5"}>*/}
+            {/*      Lorem ipsum dolor sit amet, consectetur adipisicing elit.*/}
+            {/*      Dicta eius, temporibus. Animi dicta eaque inventore*/}
+            {/*      recusandae. Doloribus illum laboriosam non quasi recusandae?*/}
+            {/*      Beatae consequuntur, cupiditate eos explicabo perspiciatis*/}
+            {/*      reprehenderit voluptatum.*/}
+            {/*    </p>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
+            {/*<div className="mt-3 sm:mt-0 sm:ml-3 flex justify-center items-center">*/}
+            {/*  <Link*/}
+            {/*    href="#"*/}
+            {/*    className="w-full z-30 flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-bold rounded-md text-gray-900 bg-white hover:text-darkblue hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"*/}
+            {/*  >*/}
+            {/*    Read More*/}
+            {/*  </Link>*/}
+            {/*</div>*/}
           </div>
+          <h1
+            className={
+              "xl:text-4xl tracking-widest my-12 header text-center text-2xl tracking-tight z-20 leading-10 font-bold text-white sm:text-2xl sm:leading-none md:text-4xl"
+            }
+          >
+            Meal Plans
+          </h1>
 
           {/*Stepping section */}
           <div
             className={"flex flex-row justify-end mt-8"}
             data-aos="fade-right"
           >
-            <div className="mt-3 sm:mt-0 sm:ml-3 flex  justify-center items-center">
-              <a
-                href="#"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue bg-gray-900 hover:text-white hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-              >
-                Read More
-              </a>
-            </div>
+            {/*<div className="mt-3 sm:mt-0 sm:ml-3 flex  justify-center items-center">*/}
+            {/*  <Link*/}
+            {/*    href="#"*/}
+            {/*    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue bg-gray-900 hover:text-white hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"*/}
+            {/*  >*/}
+            {/*    Read More*/}
+            {/*  </Link>*/}
+            {/*</div>*/}
 
-            <div
-              className={
-                "w-1/3 z-40 textCardContainer2 flex items-center justify-end"
-              }
-            >
-              <div
+            {/*<div*/}
+            {/*  className={*/}
+            {/*    "w-1/3 z-40 textCardContainer2 flex items-center justify-end"*/}
+            {/*  }*/}
+            {/*>*/}
+            {/*  <div*/}
+            {/*    className={*/}
+            {/*      "textCard2 w-4/5 z-40 bg-white justify-center items-center p-5"*/}
+            {/*    }*/}
+            {/*  >*/}
+            {/*    <h2*/}
+            {/*      className={*/}
+            {/*        "text-xl text-right tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-xl"*/}
+            {/*      }*/}
+            {/*    >*/}
+            {/*      Stepping*/}
+            {/*    </h2>*/}
+            {/*    <p className={"text-right font-medium text-gray-700 mt-5"}>*/}
+            {/*      Lorem ipsum dolor sit amet, consectetur adipisicing elit.*/}
+            {/*      Dicta eius, temporibus. Animi dicta eaque inventore*/}
+            {/*      recusandae. Doloribus illum laboriosam non quasi recusandae?*/}
+            {/*      Beatae consequuntur, cupiditate eos explicabo perspiciatis*/}
+            {/*      reprehenderit voluptatum.*/}
+            {/*    </p>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
+            <div className={"w-auto z-30 rounded-md h-auto"}>
+              <h1
                 className={
-                  "textCard2 w-4/5 z-40 bg-white justify-center items-center p-5"
+                  "xl:text-2xl absolute bottom-0 left-0 tracking-widest text-right bg-teal-400 rounded-lg p-2 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
                 }
               >
-                <h2
-                  className={
-                    "text-xl text-right tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-xl"
-                  }
-                >
-                  Stepping
-                </h2>
-                <p className={"text-right font-medium text-gray-700 mt-5"}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dicta eius, temporibus. Animi dicta eaque inventore
-                  recusandae. Doloribus illum laboriosam non quasi recusandae?
-                  Beatae consequuntur, cupiditate eos explicabo perspiciatis
-                  reprehenderit voluptatum.
-                </p>
-              </div>
-            </div>
-            <div className={"w-auto z-30 rounded-md h-auto"}>
+                ReadMore
+              </h1>
               <img src={"./walk2.jpg"} className={"imageCard rounded-md"} />
             </div>
           </div>
+          <h1
+            className={
+              "xl:text-4xl tracking-widest my-12 header text-center text-2xl tracking-tight z-20 leading-10 font-bold text-white sm:text-2xl sm:leading-none md:text-4xl"
+            }
+          >
+            Stepping & Prepping
+          </h1>
 
           {/*Fitness Class section */}
           <div className={"flex flex-row mt-8"} data-aos={"fade-left"}>
             <div className={"w-auto z-30 rounded-md h-auto"}>
               <img src={"./ani.jpeg"} className={"imageCard rounded-md"} />
-            </div>
-            <div className={"w-1/3 z-30 textCardContainer  flex items-center"}>
-              <div
+              <h1
                 className={
-                  "textCard3 w-4/5 z-40 bg-white justify-center items-center p-5"
+                  "xl:text-2xl absolute bottom-0 right-0 tracking-widest text-right bg-teal-400 rounded-lg p-2 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
                 }
               >
-                <h2
-                  className={
-                    "text-xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-xl"
-                  }
-                >
-                  Fitness Class
-                </h2>
-                <p className={"text-left font-medium text-gray-700 mt-5"}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Dicta eius, temporibus. Animi dicta eaque inventore
-                  recusandae. Doloribus illum laboriosam non quasi recusandae?
-                  Beatae consequuntur, cupiditate eos explicabo perspiciatis
-                  reprehenderit voluptatum.
-                </p>
-              </div>
-            </div>
-            <div className="mt-3 sm:mt-0 sm:ml-3 flex justify-center items-center">
-              <a
-                href="#"
-                className="w-full z-30 flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-bold rounded-md text-gray-900 bg-white hover:text-darkblue hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-              >
-                Read More
-              </a>
+                ReadMore
+              </h1>
             </div>
           </div>
+          <h1
+            className={
+              "xl:text-4xl tracking-widest my-12 header text-center text-2xl tracking-tight z-20 leading-10 font-bold text-white sm:text-2xl sm:leading-none md:text-4xl"
+            }
+          >
+            Fitness Class
+          </h1>
         </div>
       </div>
 
@@ -360,12 +312,12 @@ export default function LandingPage() {
             className="mt-12 sm:mt-8 md:mt-24 sm:ml-3 flex  justify-center items-center"
             data-aos={"fade-up"}
           >
-            <a
+            <Link
               href="#"
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue bg-gray-900 hover:text-white hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
             >
               See More
-            </a>
+            </Link>
           </div>
         </div>
       </div>

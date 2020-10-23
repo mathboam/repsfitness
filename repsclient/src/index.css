@@ -7,7 +7,7 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Abandoned";
+  font-family: "AdequateExtraLight";
 
 }
 
@@ -16,4 +16,11 @@ body {
   src:url("https://dafonttop.com/wp-data/a/398/8398/file/abandoned.bold.ttf") format("woff"),
   url("https://dafonttop.com/wp-data/a/398/8398/file/abandoned.bold.ttf") format("opentype"),
   url("https://dafonttop.com/wp-data/a/398/8398/file/abandoned.bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: AdequateExtraLight;
+  font-style: normal;
+  font-weight: normal;
+  src:  url(/Adequate-ExtraLight.woff) format('woff');
 }

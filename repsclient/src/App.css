@@ -76,6 +76,21 @@
 }
 .cardboard{
   height: 950px;
+  box-shadow: 0px 0px 49px -13px rgba(0,0,0,0.75);
+}
+.cardboard2{
+  height: 550px;
+  box-shadow: 0px 0px 49px -13px rgba(0,0,0,0.75);
+}
+.messageCard{
+  transform: translateX(-20%);
+}
+.video {
+  height: 750px;
+}
+.messageCard3{
+  height: 750px;
+  transform: translateX(20%);
 }
 .pictureCollage{
   box-shadow: 10px 10px 17px -9px rgba(0,0,0,0.75);
@@ -116,6 +131,19 @@
   }
   .sideBanner{
     height: 350px;
+  }
+  .messageCard{
+    transform: translateX(0%);
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .messageCard3{
+    transform: translateX(0%);
+    margin-bottom: 12px;
+  }
+  .centerBanner{
+    height: 400px;
+    box-shadow: 1px 1px 21px 0px rgba(0,0,0,0.75);
   }
 
 }
