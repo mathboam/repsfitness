@@ -138,105 +138,15 @@ export default function LandingPage() {
           </h2>
         </div>
         <div className={"flex p-2 flex-col"}>
-          {/*Meal Plan section */}
-          <div className={"flex flex-row"} data-aos="fade-right">
-            <div className={"w-full z-30 h-auto rounded-md"}>
-              <h1
-                className={
-                  "xl:text-2xl absolute bottom-0 right-0 tracking-widest text-right bg-purple-400 rounded-lg p-2 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
-                }
-              >
-                ReadMore
-              </h1>
-              <img src={"./dit.jpg"} className={"imageCard rounded-md"} />
-            </div>
-            {/*<div*/}
-            {/*  className={*/}
-            {/*    "w-1/3 hidden md:hidden lg:hidden xl:block z-30 textCardContainer flex items-center"*/}
-            {/*  }*/}
-            {/*>*/}
-            {/*  <div*/}
-            {/*    className={*/}
-            {/*      "textCard w-4/5 z-40 bg-white justify-center items-center p-5"*/}
-            {/*    }*/}
-            {/*  >*/}
-            {/*    <h2*/}
-            {/*      className={*/}
-            {/*        "text-xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-xl"*/}
-            {/*      }*/}
-            {/*    >*/}
-            {/*      Meal Plans*/}
-            {/*    </h2>*/}
-            {/*    <p className={"text-left font-medium text-gray-700 mt-5"}>*/}
-            {/*      Lorem ipsum dolor sit amet, consectetur adipisicing elit.*/}
-            {/*      Dicta eius, temporibus. Animi dicta eaque inventore*/}
-            {/*      recusandae. Doloribus illum laboriosam non quasi recusandae?*/}
-            {/*      Beatae consequuntur, cupiditate eos explicabo perspiciatis*/}
-            {/*      reprehenderit voluptatum.*/}
-            {/*    </p>*/}
-            {/*  </div>*/}
-            {/*</div>*/}
-            {/*<div className="mt-3 sm:mt-0 sm:ml-3 flex justify-center items-center">*/}
-            {/*  <Link*/}
-            {/*    href="#"*/}
-            {/*    className="w-full z-30 flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-bold rounded-md text-gray-900 bg-white hover:text-darkblue hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"*/}
-            {/*  >*/}
-            {/*    Read More*/}
-            {/*  </Link>*/}
-            {/*</div>*/}
-          </div>
-          <h1
-            className={
-              "xl:text-4xl tracking-widest my-12 header text-center text-2xl tracking-tight z-20 leading-10 font-bold text-white sm:text-2xl sm:leading-none md:text-4xl"
-            }
-          >
-            Meal Plans
-          </h1>
-
           {/*Stepping section */}
           <div
             className={"flex flex-row justify-end mt-8"}
             data-aos="fade-right"
           >
-            {/*<div className="mt-3 sm:mt-0 sm:ml-3 flex  justify-center items-center">*/}
-            {/*  <Link*/}
-            {/*    href="#"*/}
-            {/*    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-blue bg-gray-900 hover:text-white hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"*/}
-            {/*  >*/}
-            {/*    Read More*/}
-            {/*  </Link>*/}
-            {/*</div>*/}
-
-            {/*<div*/}
-            {/*  className={*/}
-            {/*    "w-1/3 z-40 textCardContainer2 flex items-center justify-end"*/}
-            {/*  }*/}
-            {/*>*/}
-            {/*  <div*/}
-            {/*    className={*/}
-            {/*      "textCard2 w-4/5 z-40 bg-white justify-center items-center p-5"*/}
-            {/*    }*/}
-            {/*  >*/}
-            {/*    <h2*/}
-            {/*      className={*/}
-            {/*        "text-xl text-right tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-xl"*/}
-            {/*      }*/}
-            {/*    >*/}
-            {/*      Stepping*/}
-            {/*    </h2>*/}
-            {/*    <p className={"text-right font-medium text-gray-700 mt-5"}>*/}
-            {/*      Lorem ipsum dolor sit amet, consectetur adipisicing elit.*/}
-            {/*      Dicta eius, temporibus. Animi dicta eaque inventore*/}
-            {/*      recusandae. Doloribus illum laboriosam non quasi recusandae?*/}
-            {/*      Beatae consequuntur, cupiditate eos explicabo perspiciatis*/}
-            {/*      reprehenderit voluptatum.*/}
-            {/*    </p>*/}
-            {/*  </div>*/}
-            {/*</div>*/}
             <div className={"w-auto z-30 rounded-md h-auto"}>
               <h1
                 className={
-                  "xl:text-2xl absolute bottom-0 left-0 tracking-widest text-right bg-teal-400 rounded-lg p-2 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+                  "xl:text-2xl absolute bottom-0 right-0 tracking-widest text-right bg-teal-400 rounded-lg p-2 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
                 }
               >
                 ReadMore
@@ -249,30 +159,52 @@ export default function LandingPage() {
               "xl:text-4xl tracking-widest my-12 header text-center text-2xl tracking-tight z-20 leading-10 font-bold text-white sm:text-2xl sm:leading-none md:text-4xl"
             }
           >
-            Stepping & Prepping
-          </h1>
-
-          {/*Fitness Class section */}
-          <div className={"flex flex-row mt-8"} data-aos={"fade-left"}>
-            <div className={"w-auto z-30 rounded-md h-auto"}>
-              <img src={"./ani.jpeg"} className={"imageCard rounded-md"} />
-              <h1
-                className={
-                  "xl:text-2xl absolute bottom-0 right-0 tracking-widest text-right bg-teal-400 rounded-lg p-2 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
-                }
-              >
-                ReadMore
-              </h1>
-            </div>
-          </div>
-          <h1
-            className={
-              "xl:text-4xl tracking-widest my-12 header text-center text-2xl tracking-tight z-20 leading-10 font-bold text-white sm:text-2xl sm:leading-none md:text-4xl"
-            }
-          >
-            Fitness Class
+            Stepping
           </h1>
         </div>
+      </div>
+      <div className={"my-12 flex flex-col p-4"}>
+        {/*Meal Plan section */}
+        <div className={"flex flex-row"} data-aos="fade-right">
+          <div className={"w-full z-30 h-auto rounded-md"}>
+            <h1
+              className={
+                "xl:text-2xl absolute bottom-0 left-0 tracking-widest text-right bg-purple-400 rounded-lg p-2 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+              }
+            >
+              ReadMore
+            </h1>
+            <img src={"./dit.jpg"} className={"imageCard rounded-md"} />
+          </div>
+        </div>
+        <h1
+          className={
+            "xl:text-4xl tracking-widest my-12 header text-center text-2xl tracking-tight z-20 leading-10 font-bold text-white sm:text-2xl sm:leading-none md:text-4xl"
+          }
+        >
+          Meal Plans
+        </h1>
+
+        {/*Fitness Class section */}
+        <div className={"flex flex-row mt-8"} data-aos={"fade-left"}>
+          <div className={"w-auto z-30 rounded-md h-auto"}>
+            <img src={"./ani.jpeg"} className={"imageCard rounded-md"} />
+            <h1
+              className={
+                "xl:text-2xl absolute bottom-0 left-0 tracking-widest text-right bg-teal-400 rounded-lg p-2 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+              }
+            >
+              ReadMore
+            </h1>
+          </div>
+        </div>
+        <h1
+          className={
+            "xl:text-4xl tracking-widest my-12 header text-center text-2xl tracking-tight z-20 leading-10 font-bold text-white sm:text-2xl sm:leading-none md:text-4xl"
+          }
+        >
+          Fitness CLasses
+        </h1>
       </div>
 
       <div
