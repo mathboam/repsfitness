@@ -112,9 +112,16 @@ export default function LandingPage() {
           class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2"
           data-aos={"fade-left"}
         >
+          <p
+            className={
+              "absolute bottom-0 text-black text-lg text-center self-center"
+            }
+          >
+            2020
+          </p>
           <img
             class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="./side.jpg"
+            src="./test7.jpg"
             alt=""
           />
         </div>
@@ -137,8 +144,17 @@ export default function LandingPage() {
             Programs
           </h2>
         </div>
+        <hr />
+
         <div className={"flex p-2 flex-col"}>
           {/*Stepping section */}
+          <h1
+            className={
+              "xl:text-4xl tracking-widest mt-4 header text-center text-2xl tracking-tight z-20 leading-10 font-bold text-white sm:text-2xl sm:leading-none md:text-4xl"
+            }
+          >
+            Stepping
+          </h1>
           <div
             className={"flex flex-row justify-end mt-8"}
             data-aos="fade-right"
@@ -154,12 +170,34 @@ export default function LandingPage() {
               <img src={"./walk2.jpg"} className={"imageCard rounded-md"} />
             </div>
           </div>
+
+          <h1
+            className={
+              "xl:text-4xl tracking-widest mt-4 header text-center text-2xl tracking-tight z-20 leading-10 font-bold text-white sm:text-2xl sm:leading-none md:text-4xl"
+            }
+          >
+            Prepping
+          </h1>
+          {/*Fitness Class section */}
+          <div className={"flex flex-row mt-8"} data-aos={"fade-left"}>
+            <div className={"w-auto z-30 rounded-md h-auto"}>
+              <img src={"./prep.jpg"} className={"imageCard rounded-md"} />
+              <Link
+                to={"/programs"}
+                className={
+                  "xl:text-2xl absolute bottom-0 left-0 tracking-widest text-right bg-teal-400 rounded-lg p-2 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+                }
+              >
+                ReadMore
+              </Link>
+            </div>
+          </div>
           <h1
             className={
               "xl:text-4xl tracking-widest my-12 header text-center text-2xl tracking-tight z-20 leading-10 font-bold text-white sm:text-2xl sm:leading-none md:text-4xl"
             }
           >
-            Stepping
+            Prepping
           </h1>
         </div>
       </div>

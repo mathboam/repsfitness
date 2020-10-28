@@ -102,6 +102,9 @@ export default function Programs(props) {
             data-aos={"fade-up"}
           >
             <div className={"w-screen h-full bg-gray-800 flex flex-row"}>
+              <h1 className={"absolute left-0 z-50 text-white font-bold"}>
+                Not the right way to feel during fitness training
+              </h1>
               <img
                 src={"./tired.jpg"}
                 className={"h-auto xl:w-screen w-full"}
