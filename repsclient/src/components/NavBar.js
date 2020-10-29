@@ -9,7 +9,7 @@ export default function NavBar({ toggler, setToggler }) {
   const [url, setUrl] = useState("");
   return (
     <React.Fragment>
-      <nav className="mt-2" data-aos={"zoom-in"}>
+      <nav className="mt-2 w-screen" data-aos={"zoom-in"}>
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -50,19 +50,19 @@ export default function NavBar({ toggler, setToggler }) {
                 </svg>
               </button>
             </div>
-            <div className="flex-1  flex items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="">
-                <img
-                  className="block lg:hidden h-16 w-auto rounded-full"
-                  src="./logo.jpg"
-                  alt="Workflow logo"
-                />
+            <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+
+                    <img
+                      className="block lg:hidden h-12 w-auto rounded-full"
+                      src="./logo.jpg"
+                      alt="Workflow logo"
+                    />
+
                 <img
                   className="hidden lg:block h-16 w-auto rounded-full"
                   src="./logo.jpg"
                   alt="Workflow logo"
                 />
-              </div>
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex">
@@ -104,7 +104,7 @@ export default function NavBar({ toggler, setToggler }) {
                     href="#"
                     className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out"
                   >
-                    Testimonies
+                    Testimonials
                   </Link>
                 </div>
                 <div className={"flex flex-row justify-center items-center"}>

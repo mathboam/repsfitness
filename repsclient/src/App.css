@@ -6,6 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+.boxShadow{
+  height:400px;
+  box-shadow: 13px 9px 39px -23px rgba(0,0,0,0.75);
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -37,7 +41,7 @@
   }
 }
 .imageCard{
-  height:450px;
+  height:350px;
   box-shadow: 13px 9px 39px -23px rgba(0,0,0,0.75);
 }
 .textCard{
@@ -72,7 +76,7 @@
 
 .gradientbackground{
   background: rgb(43,246,239);
-  background: linear-gradient(180deg, rgba(43,246,239,1) 18%, rgba(131,58,180,1) 55%, rgba(60,60,59,1) 100%);
+  background: linear-gradient(180deg, rgb(43, 246, 239) 18%, rgba(131,58,180,1) 55%, rgba(60,60,59,1) 100%);
 }
 .cardboard{
   height: 950px;
@@ -109,7 +113,7 @@
 }
 
 .banner{
-  height:800px;
+  height:850px;
   background-image: url("/banner2.jpg");
   background-position: center;
   background-repeat: no-repeat;

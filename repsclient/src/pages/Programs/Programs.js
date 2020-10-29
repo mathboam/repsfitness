@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
 
 export default function Programs(props) {
   const [toggleMiniNav, setToggleMiniNav] = useState(false);
@@ -23,18 +24,18 @@ export default function Programs(props) {
         </div>
         <div
           className={
-            "mt-12 w-screen relative banner flex justify-center items-center "
+            "w-screen relative banner flex justify-center items-center "
           }
           data-aos={"fade-up"}
         >
           <div className={"w-screen h-full bg-gray-800 flex flex-row"}>
-            <img src={"./blk1.jpg"} className={"h-auto xl:w-auto w-full"} />
-            <img
-              src={"./de.jpg"}
-              className={
-                "h-auto hidden lg:w-auto lg:overflow-hidden xl:block xl:w-full"
-              }
-            />
+            <img src={"./blk1.jpg"} className={"h-auto w-screen"} />
+            {/*<img*/}
+            {/*  src={"./de.jpg"}*/}
+            {/*  className={*/}
+            {/*    "h-auto hidden xl:block xl:w-full"*/}
+            {/*  }*/}
+            {/*/>*/}
           </div>
           <h1
             className={
@@ -44,11 +45,7 @@ export default function Programs(props) {
             Stepping, that one I can do
           </h1>
         </div>
-        <div
-          className={
-            "flex-col flex justify-center items-center space-y-12 mt-4"
-          }
-        >
+        <div className={"flex-col flex justify-center items-center space-y-12"}>
           <p className="bg-purple-600 p-6 text-lg tracking-wide z-20 leading-10 font-medium text-center text-white sm:text-sm sm:leading-none md:text-2xl lg:text-3xl xl:text-4xl font-bold">
             You cannot fail on this program unless you fail to do the
             program!!!!!
@@ -102,7 +99,7 @@ export default function Programs(props) {
             data-aos={"fade-up"}
           >
             <div className={"w-screen h-full bg-gray-800 flex flex-row"}>
-              <h1 className={"absolute left-0 z-50 text-white font-bold"}>
+              <h1 className={"absolute  z-50 text-white font-bold"}>
                 Not the right way to feel during fitness training
               </h1>
               <img
@@ -257,7 +254,7 @@ export default function Programs(props) {
           >
             <h1
               className={
-                "xl:text-2xl absolute bottom-0 left-0 tracking-widest text-right bg-purple-400 rounded-lg p-4 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+                "xl:text-xl absolute bottom-0 left-0 tracking-widest text-right bg-purple-400 rounded-lg p-4 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
               }
             >
               When you love prepping, life is more relaxing.
@@ -272,7 +269,7 @@ export default function Programs(props) {
           >
             <h1
               className={
-                "xl:text-2xl absolute bottom-0 tracking-widest text-right bg-purple-400 rounded-lg p-4 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+                "xl:text-xl absolute bottom-0 tracking-widest text-right bg-purple-400 rounded-lg p-4 header md:text-base sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
               }
             >
               Measure It To Manage It
@@ -516,6 +513,127 @@ export default function Programs(props) {
         </div>
 
         <hr className={"my-12"} />
+
+        <h1
+          className={
+            "xl:text-2xl tracking-widest mt-12 header text-center text-xl tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-2xl"
+          }
+        >
+          Fastathons(ONCE IN THREE MONTHS)
+        </h1>
+        <div className={""}>
+          <div
+            className={"flex md:flex-col flex-row mt-8"}
+            data-aos={"fade-left"}
+          >
+            <div className={"md:flex md:flex-row relative"}>
+              <div
+                className={
+                  "md:w-1/3 md:flex md:p-4 md:items-center hidden md:flex-1"
+                }
+              >
+                <h4
+                  className={
+                    "xl:text-base md:leading-normal  md:text-left mt-4 md:mt-12 header text-center tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-base"
+                  }
+                >
+                  24 hours - 14 days water only fasting that helps tighten up
+                  the core or abs of our members. We take it slow and make sure
+                  its within the reach of every member.
+                </h4>
+              </div>
+              <div className={"w-auto z-30 rounded-md h-auto"}>
+                <img src={"./fasta.jpg"} className={"imageCard rounded-md"} />
+                <Link
+                  to={"/programs"}
+                  className={
+                    "xl:text-2xl md:hidden absolute bottom-0 right-0 tracking-widest text-right bg-teal-400 rounded-lg md:rounded-none p-2 header md:text-2xl sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+                  }
+                >
+                  Read More
+                </Link>
+              </div>
+            </div>
+
+            <div className={"md:mt-4 md:flex md:justify-start hidden"}>
+              <h1
+                className={
+                  "xl:text-2xl tracking-widest text-right bg-teal-400 rounded-lg md:rounded-none p-2 header md:text-2xl sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+                }
+              >
+                Read More
+              </h1>
+            </div>
+          </div>
+          <h4
+            className={
+              "xl:text-xl md:hidden tracking-widest md: mt-4 md:mt-12 header text-center text-base tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-xl"
+            }
+          >
+            24 hours - 14 days water only fastings that helps tighten up the
+            core of our members. We take it slow and make sure its within the
+            reach of every member.
+          </h4>
+        </div>
+
+        <h1
+          className={
+            "xl:text-2xl tracking-widest mt-12 header text-center text-xl tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-2xl"
+          }
+        >
+          Skipathon( ONCE IN THREE MONTHS )
+        </h1>
+
+        <div className={""}>
+          <div
+            className={"flex md:flex-col flex-row mt-8"}
+            data-aos={"fade-left"}
+          >
+            <div className={"md:flex md:flex-row relative"}>
+              <div className={"w-auto z-30 rounded-md h-auto"}>
+                <img src={"./skippa6.jpg"} className={"imageCard rounded-md"} />
+                <Link
+                  to={"/programs"}
+                  className={
+                    "xl:text-2xl md:hidden absolute bottom-0 left-0 tracking-widest text-right bg-teal-400 rounded-lg md:rounded-none p-2 header md:text-2xl sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+                  }
+                >
+                  Read More
+                </Link>
+              </div>
+              <div
+                className={
+                  "md:w-1/3 md:flex md:p-4 md:items-center hidden md:flex-1"
+                }
+              >
+                <h4
+                  className={
+                    "xl:text-base md:leading-normal  md:text-right mt-4 md:mt-12 header text-left tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-base"
+                  }
+                >
+                  We skip for fun. We skip for pleasure.
+                </h4>
+              </div>
+            </div>
+
+            <div className={"md:mt-4 md:flex md:justify-end hidden"}>
+              <h1
+                className={
+                  "xl:text-2xl tracking-widest text-right bg-teal-400 rounded-lg md:rounded-none p-2 header md:text-2xl sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+                }
+              >
+                Read More
+              </h1>
+            </div>
+          </div>
+          <h4
+            className={
+              "xl:text-xl md:hidden tracking-widest md: mt-4 md:mt-12 header text-center text-base tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-xl"
+            }
+          >
+            We skip to the max. For those who enjoy it.
+          </h4>
+        </div>
 
         {/*skeippathons*/}
         <div
