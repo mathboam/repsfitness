@@ -10,6 +10,7 @@ export default function Programs(props) {
     <React.Fragment>
       <div>
         <NavBar />
+
         <div
           className={"flex justify-center w-screen items-center mt-12"}
           data-aos={"fade-up"}
@@ -516,7 +517,7 @@ export default function Programs(props) {
 
         <h1
           className={
-            "xl:text-2xl tracking-widest mt-12 header text-center text-xl tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-2xl"
+            "xl:text-2xl tracking-widest mt-12 header text-center text-xl tracking-tight z-20 leading-10 font-bold text-gray-700 sm:text-xl sm:leading-none md:text-2xl"
           }
         >
           Fastathons(ONCE IN THREE MONTHS)
@@ -534,7 +535,7 @@ export default function Programs(props) {
               >
                 <h4
                   className={
-                    "xl:text-base md:leading-normal  md:text-left mt-4 md:mt-12 header text-center tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-base"
+                    "xl:text-base md:leading-normal md:text-left mt-4 md:mt-12 header text-center tracking-tight z-20 leading-10 font-bold text-gray-400 sm:text-xl sm:leading-none md:text-base"
                   }
                 >
                   24 hours - 14 days water only fasting that helps tighten up
@@ -567,7 +568,7 @@ export default function Programs(props) {
           </div>
           <h4
             className={
-              "xl:text-xl md:hidden tracking-widest md: mt-4 md:mt-12 header text-center text-base tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-xl"
+              "xl:text-xl md:hidden tracking-widest md: mt-4 md:mt-12 header text-center text-base tracking-tight z-20 leading-10 font-bold text-gray-400 sm:text-xl sm:leading-none md:text-xl"
             }
           >
             24 hours - 14 days water only fastings that helps tighten up the
@@ -578,7 +579,7 @@ export default function Programs(props) {
 
         <h1
           className={
-            "xl:text-2xl tracking-widest mt-12 header text-center text-xl tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-2xl"
+            "xl:text-2xl tracking-widest mt-12 header text-center text-xl tracking-tight z-20 leading-10 font-bold text-gray-400 sm:text-xl sm:leading-none md:text-2xl"
           }
         >
           Skipathon( ONCE IN THREE MONTHS )
@@ -608,7 +609,7 @@ export default function Programs(props) {
               >
                 <h4
                   className={
-                    "xl:text-base md:leading-normal  md:text-right mt-4 md:mt-12 header text-left tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-base"
+                    "xl:text-base md:leading-normal md:text-right mt-4 md:mt-12 header text-left tracking-tight z-20 leading-10 font-bold text-gray-700 sm:text-xl sm:leading-none md:text-base"
                   }
                 >
                   We skip for fun. We skip for pleasure.
@@ -631,7 +632,7 @@ export default function Programs(props) {
               "xl:text-xl md:hidden tracking-widest md: mt-4 md:mt-12 header text-center text-base tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-xl"
             }
           >
-            We skip to the max. For those who enjoy it.
+            We skip for fun. We skip for pleasure.
           </h4>
         </div>
 

@@ -11,20 +11,7 @@ export default function LandingPage() {
       <div className={"md:w-screen border-4"}>
         <NavBar />
         {/*before & after*/}
-        <div
-          className={
-            "relative bg-white flex justify-center  overflow-hidden mt-12 md:mt-12 mb-12 md:mb-12 flex-col"
-          }
-        >
-          <div
-            className={"flex justify-center items-center w-full"}
-            data-aos={"fade-up"}
-          >
-            <h2 className="text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-2xl sm:leading-none md:text-2xl">
-              Before & After
-            </h2>
-          </div>
-        </div>
+
         <div
           className={"flex flex-col justify-center items-center w-full"}
           data-aos={"fade-up"}
@@ -46,6 +33,20 @@ export default function LandingPage() {
             </Carousel>
           </div>
           <div
+            className={
+              "relative bg-white flex justify-center overflow-hidden mt-12 md:mt-12 mb-8 md:mb-8 flex-col"
+            }
+          >
+            <div
+              className={"flex justify-center items-center w-full"}
+              data-aos={"fade-up"}
+            >
+              <h2 className="text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-2xl sm:leading-none md:text-2xl">
+                Before & After
+              </h2>
+            </div>
+          </div>
+          <div
             className="mt-12 sm:mt-12 md:mt-12 sm:ml-3 flex  justify-center items-center"
             data-aos={"fade-up"}
           >
@@ -57,6 +58,22 @@ export default function LandingPage() {
             </Link>
           </div>
         </div>
+
+        {/*video section*/}
+
+        <div className={"w-full banner my-12"} data-aos={"fade-up"}>
+          <video
+            width="1000"
+            className={"h-full w-full focus:outline-none"}
+            data-aos={"fade-right"}
+            // autoPlay
+            controls
+          >
+            <source src="./intro.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+        </div>
+
         <div
           className={
             "justify-center flex-col items-center flex w-full h-10px my-12"
@@ -68,6 +85,7 @@ export default function LandingPage() {
           </h2>
         </div>
         <div
+          data-aos={"fade-up"}
           class={
             "relative rounded-t-lg gradientbackground md:items-center flex justify-center overflow-hidden mt-12 md:mt-1 flex-col"
           }
@@ -95,7 +113,7 @@ export default function LandingPage() {
                     <Link
                       to={"/programs"}
                       className={
-                        "xl:text-2xl md:hidden absolute bottom-0 left-0 tracking-widest text-right bg-purple-400 rounded-lg md:rounded-none p-2 header md:text-2xl sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+                        "xl:text-xl md:hidden absolute bottom-0 left-0 tracking-widest text-right bg-purple-400 rounded-lg md:rounded-none p-2 header md:text-2xl sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
                       }
                     >
                       Read More
@@ -121,7 +139,7 @@ export default function LandingPage() {
                 <div className={"md:mt-4 md:flex md:justify-end hidden"}>
                   <h1
                     className={
-                      "xl:text-2xl tracking-widest text-right bg-purple-400 rounded-lg md:rounded-none p-2 header md:text-2xl sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
+                      "xl:text-2xl tracking-widest text-right bg-purple-400 rounded-sm p-2 header md:text-2xl sm:p-2 text-sm tracking-tight z-20 leading-10 font-extrabold text-white  sm:leading-none md:text-extrabold"
                     }
                   >
                     Read More
@@ -176,13 +194,12 @@ export default function LandingPage() {
                     >
                       <h4
                         className={
-                          "xl:text-xl md:leading-normal  md:text-left mt-4 md:mt-12 header text-center text-base tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-base"
+                          "xl:text-base md:leading-normal  md:text-right mt-4 md:mt-12 header text-center tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-base"
                         }
                       >
                         Enjoy your local Ghana dishes while you work on your
-                        body fat. Healthy and concious food intake is key to
-                        weight loss and body management.So at reps we say,
-                        measure it to manage it.
+                        body fat. Portion control is key to weight loss and body
+                        management.So at reps we say, measure it to manage it.
                       </h4>
                     </div>
                   </div>
@@ -203,8 +220,8 @@ export default function LandingPage() {
                   }
                 >
                   Enjoy your local Ghana dishes while you work on your body fat.
-                  Healthy and concious food intake is key to weight loss and
-                  body management.So at reps we say, measure it to manage it.
+                  Portion control is key to weight loss and body management.So
+                  at reps we say, measure it to manage it.
                 </h4>
               </div>
               <div className={""}>
@@ -220,7 +237,7 @@ export default function LandingPage() {
                     >
                       <h4
                         className={
-                          "xl:text-xl md:leading-normal  md:text-left mt-4 md:mt-12 header text-center text-base tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-base"
+                          "xl:text-base md:leading-normal  md:text-left mt-4 md:mt-12 header text-center tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-base"
                         }
                       >
                         We also provide weight loss meal plans for our U.K
@@ -309,7 +326,7 @@ export default function LandingPage() {
                           "xl:text-base md:leading-normal  md:text-right mt-4 md:mt-12 header text-center tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-base"
                         }
                       >
-                        Once every three months, our members are tasked with a
+                        Once every three months, our members are invited to a
                         fun walkathon challenges that helps shreds body fats as
                         well. Maximum of 25 miles every three months.
                       </h4>
@@ -336,21 +353,25 @@ export default function LandingPage() {
                   Maximum of 25 miles every three months.
                 </h4>
               </div>
-
-              <Link
-                to={"/programs"}
-                className={
-                  "xl:text-2xl tracking-widest header mt-8 text-center text-xl tracking-tight z-20 leading-10 font-bold text-white bg-teal-400 p-4 w-full sm:text-xl sm:leading-none md:text-2xl"
-                }
-              >
-                Click to see more
-              </Link>
+              <div className={"flex flex-1 justify-center items-center"}>
+                <Link
+                  to={"/programs"}
+                  className={
+                    "xl:text-2xl w-auto tracking-widest header mt-8 text-center text-xl tracking-tight z-20 leading-10 font-bold text-white bg-teal-400 p-4 rounded-sm sm:text-xl sm:leading-none md:text-2xl"
+                  }
+                >
+                  Click to see more
+                </Link>
+              </div>
             </div>
           </div>
         </div>
 
         {/*Life Coaching*/}
-        <div className={"flex justify-center items-center my-12 flex-col"}>
+        <div
+          className={"flex justify-center items-center my-12 flex-col"}
+          data-aos={"fade-up"}
+        >
           <h2 className="text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-2xl sm:leading-none md:text-2xl">
             Life Coaching
           </h2>
@@ -363,9 +384,23 @@ export default function LandingPage() {
             A confidential,one on one service to explore compulsory eating,
             binge eating, yoyo eating and many more.
           </p>
-          <div className={"flex justify-center"}></div>
-          <div className={"w-4/5 flex flex-wrap border boxShadow"}>
-            <img src={"./lifec.jpeg"} className={"w-auto h-auto"} />
+          <div className={"flex w-4/5 flex-row"} data-aos={"fade-left"}>
+            <div className={"w-auto flex flex-wrap boxShadow"}>
+              <img src={"./lifec.jpeg"} className={"w-auto h-auto"} />
+            </div>
+            <div
+              className={"justify-center flex-1 items-center flex"}
+              data-aos={"fade-up"}
+            >
+              <Link
+                to={"/lifecoaching"}
+                className={
+                  "p-2 px-4 w-auto text-center rounded-full bg-purple-600 text-white leading-10 font-bold"
+                }
+              >
+                JOIN US NOW!......
+              </Link>
+            </div>
           </div>
 
           <p
@@ -388,9 +423,22 @@ export default function LandingPage() {
             FOR MEN{" "}
           </h2>
         </div>
+        <div className={"flex justify-center ite-center"}>
+          <div className={"w-4/5 flex flex-wrap  boxShadow"}>
+            <img src={"./bigbelly.jpeg"} className={"w-auto h-auto"} />
+          </div>
+        </div>
 
-        <div className={"w-4/5 flex flex-wrap border boxShadow"}>
-          <img src={"./bigbelly.jpeg"} className={"w-auto h-auto"} />
+        <div
+          className="mt-12 sm:mt-12 md:mt-12 sm:ml-3 flex justify-center items-center"
+          data-aos={"fade-up"}
+        >
+          <Link
+            to={"/testimonials"}
+            className="w-auto flex items-center justify-center px-8 py-3 border-transparent text-base leading-6 font-extrabold rounded-md text-blue bg-gray-900 hover:text-white hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+          >
+            See More...
+          </Link>
         </div>
 
         <Footer />

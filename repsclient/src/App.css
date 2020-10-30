@@ -113,10 +113,10 @@
 }
 
 .banner{
-  height:850px;
-  background-image: url("/banner2.jpg");
+  height:550px;
   background-position: center;
   background-repeat: no-repeat;
+  box-shadow: -1px 0px 39px -6px rgba(0,0,0,0.75);
 }
 @media screen and (max-width: 992px) {
   .testimonialsContainer{
