@@ -51,18 +51,17 @@ export default function NavBar({ toggler, setToggler }) {
               </button>
             </div>
             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <img
+                className="block lg:hidden h-12 w-auto rounded-full"
+                src="./logo.jpg"
+                alt="Workflow logo"
+              />
 
-                    <img
-                      className="block lg:hidden h-12 w-auto rounded-full"
-                      src="./logo.jpg"
-                      alt="Workflow logo"
-                    />
-
-                <img
-                  className="hidden lg:block h-16 w-auto rounded-full"
-                  src="./logo.jpg"
-                  alt="Workflow logo"
-                />
+              <img
+                className="hidden lg:block h-16 w-auto rounded-full"
+                src="./logo.jpg"
+                alt="Workflow logo"
+              />
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex">
@@ -84,42 +83,17 @@ export default function NavBar({ toggler, setToggler }) {
                 </div>
                 <div className={"flex flex-row justify-center items-center"}>
                   <Link
-                    to={"/lifecoaching"}
-                    className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out"
-                  >
-                    Life Coaching
-                  </Link>
-                </div>
-                <div className={"flex flex-row justify-center items-center"}>
-                  <Link
-                    to={"/accountability"}
-                    className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out"
-                  >
-                    Accountability
-                  </Link>
-                </div>
-                <div className={"flex flex-row justify-center items-center"}>
-                  <Link
-                    to={"/testimonials"}
-                    href="#"
-                    className="text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out"
-                  >
-                    Testimonials
-                  </Link>
-                </div>
-                <div className={"flex flex-row justify-center items-center"}>
-                  <Link
                     onClick={() => {
-                      setUrl("support");
+                      setUrl("register");
                     }}
-                    to={"/support"}
+                    to={"/register"}
                     className={
-                      url == "support"
+                      url == "register"
                         ? "text-black px-3 text-teal-400 py-2 rounded-md text-sm font-medium leading-5 hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out bg-gray-700"
                         : "text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out"
                     }
                   >
-                    Support Services
+                    Sign Up
                   </Link>
                 </div>
               </div>
@@ -145,17 +119,11 @@ export default function NavBar({ toggler, setToggler }) {
               Programs
             </Link>
             <Link
-              to={"/support"}
+              to={"/register"}
               className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
             >
-              Support Services
+              Sign Up
             </Link>
-            <a
-              href="#"
-              className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out"
-            >
-              Calendar
-            </a>
           </div>
         </div>
       </nav>

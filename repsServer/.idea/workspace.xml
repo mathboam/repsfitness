@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84d3c302-3312-400f-a3ff-8fe854ffed93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/repsServer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/members/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/members/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/members/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/members/resolvers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/members/typeDefs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/payments/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/payments/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/payments/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/payments/paymentsJutsu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/payments/resolvers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/payments/typeDefs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsclient/src/pages/registration/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsclient/src/pages/registration/registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/pages/Programs/Programs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/pages/Programs/Programs.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jmL3uJhAK8XU6Hr2K8BvCgtc5Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/domains/payment" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/domains/payments" />
+      <recent name="$PROJECT_DIR$/src/domains/members" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/domains/payment" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84d3c302-3312-400f-a3ff-8fe854ffed93" name="Default Changelist" comment="" />
+      <created>1604404134716</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604404134716</updated>
+      <workItem from="1604404141989" duration="842000" />
+      <workItem from="1604478412896" duration="15913000" />
+      <workItem from="1604498618205" duration="5239000" />
+      <workItem from="1604579626646" duration="947000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1658" y="23" key="SettingsEditor" timestamp="1604479797904">
+      <screen x="1280" y="0" width="1360" height="768" />
+    </state>
+    <state x="1658" y="23" key="SettingsEditor/0.0.1280.800/1280.0.1360.768@1280.0.1360.768" timestamp="1604479797904" />
+  </component>
+</project>

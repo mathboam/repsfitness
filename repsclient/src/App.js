@@ -9,6 +9,7 @@ import SupportServices from "./pages/SupportServices";
 import Programs from "./pages/Programs";
 import LifeCoaching from "./pages/LifeCoaching";
 import "aos/dist/aos.css";
+import Registration from "./pages/registration/registration";
 
 function App() {
   useEffect(() => {
@@ -37,8 +38,8 @@ function App() {
           <Route path={"/accountability"}>
             <Accountability />
           </Route>
-          <Route path={"/meals"}>
-            <Accountability />
+          <Route path={"/register"}>
+            <Registration />
           </Route>
         </Switch>
       </Router>
