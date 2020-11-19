@@ -20,68 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d3c302-3312-400f-a3ff-8fe854ffed93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/Hooks/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/Hooks/useOutsideAlerter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/Hooks/useStorage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/Layout/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/ProgressBar/progressBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/Transition/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/firebase/.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/gql/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/gql/mutations/stepsUpload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Dashboard/Dashboard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Dashboard/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Steps/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Steps/steps.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Weights/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Weights/weights.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../memberdashboard/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/images/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/images/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/images/model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/images/resolvers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/images/typeDefs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/payment/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/repsdashboard.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/src/comps/Loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/src/comps/modals/WeightsModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/src/firebase/.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/src/gql/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/src/gql/queryJutsu/weightsjutsu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsdashboard/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/members/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/members/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/members/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/members/model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/members/resolvers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/members/resolvers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/members/typeDefs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/members/typeDefs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/payments/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/payments/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/payments/paymentsJutsu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/payments/typeDefs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/payments/typeDefs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsclient/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsclient/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsclient/src/components/Personal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/components/Personal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsclient/src/components/WelcomPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/components/WelcomPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsclient/src/components/packages.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/components/packages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsclient/src/gql/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/gql/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsclient/src/gql/jutsus/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/gql/jutsus/mutationJutsu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsclient/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsclient/src/pages/Programs/Programs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/pages/Programs/Programs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../repsclient/src/pages/registration/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/pages/registration/registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsdashboard/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../repsdashboard/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsdashboard/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsdashboard/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsdashboard/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../repsdashboard/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsdashboard/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsdashboard/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsdashboard/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../repsdashboard/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
