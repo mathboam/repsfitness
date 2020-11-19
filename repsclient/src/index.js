@@ -5,7 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "./tailwind.output.css";
 import { ApolloProvider } from "@apollo/client";
-import client from "./gql/index";
+import { client } from "./gql/index";
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>

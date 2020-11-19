@@ -19,11 +19,18 @@ const memberSchema = new mongoose.Schema(
       required: true,
     },
     // payment: { type: String, required: true },
-    payment: [
+    // payment: [
+    //   {
+    //     type: mongoose.SchemaTypes.ObjectId,
+    //     ref: "Payment",
+    //     required: true,
+    //   },
+    // ],
+    images: [
       {
         type: mongoose.SchemaTypes.ObjectId,
-        ref: "Payment",
-        required: true,
+        ref: "Images",
+        required: false,
       },
     ],
   },

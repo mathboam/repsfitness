@@ -4,8 +4,6 @@ import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 
 export default function Programs(props) {
-  const [toggleMiniNav, setToggleMiniNav] = useState(false);
-
   return (
     <React.Fragment>
       <div>
@@ -30,7 +28,7 @@ export default function Programs(props) {
           data-aos={"fade-up"}
         >
           <div className={"w-screen h-full bg-gray-800 flex flex-row"}>
-            <img src={"./blk1.jpg"} className={"h-auto w-screen"} />
+            <img src={"./blk1.jpg"} className={"h-auto w-screen"} alt={""} />
             {/*<img*/}
             {/*  src={"./de.jpg"}*/}
             {/*  className={*/}
@@ -106,6 +104,7 @@ export default function Programs(props) {
               <img
                 src={"./tired.jpg"}
                 className={"h-auto xl:w-screen w-full"}
+                alt={""}
               />
             </div>
           </div>
@@ -119,100 +118,6 @@ export default function Programs(props) {
             in UK.
           </p>
         </div>
-
-        {/*<div*/}
-        {/*  className={*/}
-        {/*    "flex p-2 md:p-2 lg:p-6 xl:p-12 flex-col xl:flex-row lg:flex-row sm:flex-col"*/}
-        {/*  }*/}
-        {/*>*/}
-        {/*  <div*/}
-        {/*    className={*/}
-        {/*      "w-auto xl:w-auto lg:w-full relative z-40 cardboard2 bg-teal-400 rounded-lg"*/}
-        {/*    }*/}
-        {/*  >*/}
-        {/*    <img src={"./elen.jpg "} className={"h-full rounded-lg"} />*/}
-        {/*  </div>*/}
-        {/*  <div*/}
-        {/*    className={*/}
-        {/*      "xl:w-1/6 lg:w-full z-50 flex lg:items-start items-end messageCard lg:mt-12"*/}
-        {/*    }*/}
-        {/*  >*/}
-        {/*    <div*/}
-        {/*      className={*/}
-        {/*        "w-full flex z-50 flex-col justify-center items-center bg-teal-400 p-6 lg:p-2"*/}
-        {/*      }*/}
-        {/*    >*/}
-        {/*      <h1 className={"font-extrabold text-white text-4xl lg:text-xl"}>*/}
-        {/*        Message*/}
-        {/*      </h1>*/}
-
-        {/*      <p*/}
-        {/*        className={*/}
-        {/*          "text-white font-bold text-center text-xl lg:text-base"*/}
-        {/*        }*/}
-        {/*      >*/}
-        {/*        "Thanks to Reps, stepping and prepping has inspired me to*/}
-        {/*        develop a new way of life, Even in the rain i am still excited*/}
-        {/*        to step and loose more weight.". Eleanor UK.*/}
-        {/*      </p>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-
-        {/*  <div*/}
-        {/*    className={*/}
-        {/*      "bg-teal-400 video w-full xl:w-1/2 xl:ml-12 justify-center"*/}
-        {/*    }*/}
-        {/*  >*/}
-        {/*    <video*/}
-        {/*      width="1000"*/}
-        {/*      className={"h-full w-full focus:outline-none"}*/}
-        {/*      // autoPlay*/}
-        {/*      controls*/}
-        {/*    >*/}
-        {/*      <source src="./samcut.mp4" type="video/mp4" />*/}
-        {/*      Your browser does not support HTML video.*/}
-        {/*    </video>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-
-        {/*<div*/}
-        {/*  className={*/}
-        {/*    "flex p-2 md:p-2 lg:p-6 xl:p-12 flex-col xl:flex-row lg:flex-row sm:flex-col"*/}
-        {/*  }*/}
-        {/*>*/}
-        {/*  <div*/}
-        {/*    className={*/}
-        {/*      "w-auto xl:w-auto lg:w-full relative z-40 cardboard2 bg-teal-400 rounded-lg"*/}
-        {/*    }*/}
-        {/*  >*/}
-        {/*    <img src={"./kw1.jpg "} className={"h-full rounded-lg"} />*/}
-        {/*  </div>*/}
-        {/*  <div*/}
-        {/*    className={*/}
-        {/*      "xl:w-1/6 lg:w-full z-50 flex lg:items-start items-end messageCard lg:mt-12"*/}
-        {/*    }*/}
-        {/*  >*/}
-        {/*    <div*/}
-        {/*      className={*/}
-        {/*        "w-full flex z-50 flex-col justify-center items-center bg-teal-400 p-6 lg:p-2 lg:w-4/5"*/}
-        {/*      }*/}
-        {/*    >*/}
-        {/*      <h1 className={"font-extrabold text-white text-4xl lg:text-xl"}>*/}
-        {/*        Message*/}
-        {/*      </h1>*/}
-
-        {/*      <p*/}
-        {/*        className={*/}
-        {/*          "text-white font-bold text-center text-xl lg:text-base"*/}
-        {/*        }*/}
-        {/*      >*/}
-        {/*        "Taking on Reps diet coaching and going for the walks have been*/}
-        {/*        a new great experience i've had. Looking forward to the final*/}
-        {/*        results in December". Kwame Ghana.*/}
-        {/*      </p>*/}
-        {/*    </div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
 
         <div className={"w-full border h-auto"}>
           <div></div>

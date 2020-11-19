@@ -2,9 +2,9 @@ const { gql } = require("apollo-server-express");
 
 module.exports = gql`
   enum Package {
-    Vip
-    Group
-    LifeCoaching
+    Stepping_Only
+    Prepping_Only
+    Stepping_Prepping
   }
   type Member {
     _id: ID
@@ -12,7 +12,8 @@ module.exports = gql`
     age: Int
     dietRelatedIllness: String
     package: Package
-    payment: [Payment]
+    images: [Image]
+    startWeight: Int
     contact: String
     createdAt: Date
     updatedAt: Date
@@ -22,7 +23,7 @@ module.exports = gql`
     age: Int
     dietRelatedIllness: String
     package: Package
-    payment: [ID]
+    startWeight: Int
     contact: String
   }
   input fetchMemberInput {
@@ -32,8 +33,8 @@ module.exports = gql`
     name: String
     age: Int
     dietRelatedIllness: String
-    package: Package
-    payment: [ID]
+    package: String
+    images: [String]
     contact: String
   }
 
@@ -42,7 +43,7 @@ module.exports = gql`
   }
 
   extend type Query {
-    fetchMember(filter: fetchMemberInput = {}): Member
+    fetchMember(memberId: ID): Member
     fetchMembers(filter: fetchMembersInput = {}): [Member]
   }
   extend type Mutation {

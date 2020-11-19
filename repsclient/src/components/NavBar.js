@@ -88,7 +88,7 @@ export default function NavBar({ toggler, setToggler }) {
                     }}
                     to={"/register"}
                     className={
-                      url == "register"
+                      url === "register"
                         ? "text-black px-3 text-teal-400 py-2 rounded-md text-sm font-medium leading-5 hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out bg-gray-700"
                         : "text-black px-3 py-2 rounded-md text-sm font-medium leading-5 text-black hover:text-teal-400 hover:bg-gray-700 focus:outline-none focus:text-teal-400 focus:bg-gray-700 transition duration-150 ease-in-out"
                     }

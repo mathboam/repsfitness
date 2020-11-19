@@ -12,10 +12,22 @@ export default function Personal(props) {
       age,
       counter,
       setcouter,
+      startWeight,
+      setStartWeight,
     } = props;
-    !email || !contact || !firstName || !lastName || !illness || !age
-      ? toaster.warning("Fill out all the Fields")
-      : setcouter(counter + 1);
+    if (age < 0 || startWeight < 0 || age > 100 || startWeight < 10) {
+      toaster.warning("Enter a Valid Age or Weight");
+    } else {
+      !email ||
+      !contact ||
+      !firstName ||
+      !lastName ||
+      !illness ||
+      !age ||
+      !startWeight
+        ? toaster.warning("Fill out all the Fields")
+        : setcouter(counter + 1);
+    }
   };
   return (
     <React.Fragment>
@@ -42,7 +54,7 @@ export default function Personal(props) {
                           htmlFor="first_name"
                           className="block text-sm font-medium leading-5 text-gray-700"
                         >
-                          First name <span className={"text-red"}>*</span>
+                          First name <span className={"text-red-800"}>*</span>
                         </label>
                         <input
                           id="first_name"
@@ -59,7 +71,7 @@ export default function Personal(props) {
                           htmlFor="last_name"
                           className="block text-sm font-medium leading-5 text-gray-700"
                         >
-                          Last name <span className={"text-red"}>*</span>
+                          Last name <span className={"text-red-800"}>*</span>
                         </label>
                         <input
                           onChange={(e) => props.setLastName(e.target.value)}
@@ -79,8 +91,8 @@ export default function Personal(props) {
                           Diet Related Illness
                           <span className={"text-sm text-gray-500"}>
                             (eg diabetes...)
-                          </span>{" "}
-                          <span className={"text-red"}>*</span>
+                          </span>
+                          <span className={"text-red-800"}>*</span>
                         </label>
                         <input
                           type="text"
@@ -93,29 +105,12 @@ export default function Personal(props) {
                         />
                       </div>
 
-                      <div className="col-span-6 sm:col-span-6 lg:col-span-2">
-                        <label
-                          htmlFor="phone"
-                          className="block text-sm font-medium leading-5 text-gray-700"
-                        >
-                          Phone <span className={"text-red"}>*</span>
-                        </label>
-                        <input
-                          onChange={(e) => props.setContact(e.target.value)}
-                          id="phone"
-                          required
-                          defaultValue={props.contact}
-                          value={props.contact}
-                          className="mt-1 focus:outline-none form-input border p-1 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                        />
-                      </div>
-
                       <div className="col-span-6 sm:col-span-3 lg:col-span-2">
                         <label
                           htmlFor="state"
                           className="block text-sm font-medium leading-5 text-gray-700"
                         >
-                          Age <span className={"text-red"}>*</span>
+                          Age <span className={"text-red-800"}>*</span>
                         </label>
                         <input
                           type={"number"}
@@ -133,7 +128,7 @@ export default function Personal(props) {
                           htmlFor="postal_code"
                           className="block text-sm font-medium leading-5 text-gray-700"
                         >
-                          Email <span className={"text-red"}>*</span>
+                          Email <span className={"text-red-800"}>*</span>
                         </label>
                         <input
                           onChange={(e) => props.setEmail(e.target.value)}
@@ -141,6 +136,46 @@ export default function Personal(props) {
                           defaultValue={props.email}
                           value={props.email}
                           id="email_address"
+                          className="mt-1 focus:outline-none form-input border p-1 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                        />
+                      </div>
+
+                      <div className="col-span-6 sm:col-span-6 lg:col-span-2">
+                        <label
+                          htmlFor="phone"
+                          className="block text-sm font-medium leading-5 text-gray-700"
+                        >
+                          Phone <span className={"text-red-800"}>*</span>
+                        </label>
+                        <input
+                          onChange={(e) => props.setContact(e.target.value)}
+                          id="phone"
+                          required
+                          defaultValue={props.contact}
+                          value={props.contact}
+                          className="mt-1 focus:outline-none form-input border p-1 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+                        />
+                      </div>
+
+                      <div className="col-span-6 sm:col-span-6 lg:col-span-2">
+                        <label
+                          htmlFor="phone"
+                          className="block text-sm font-medium leading-5 text-gray-700"
+                        >
+                          Start Weight{" "}
+                          <span className={"text-sm text-gray-500"}>
+                            (current weight)
+                          </span>
+                          <span className={"text-red-800"}>*</span>
+                        </label>
+                        <input
+                          onChange={(e) => props.setStartWeight(e.target.value)}
+                          id="start_Weight"
+                          required
+                          type={"number"}
+                          defaultValue={props.startWeight}
+                          value={props.startWeight}
+                          placeholder={"eg.112.6 kg"}
                           className="mt-1 focus:outline-none form-input border p-1 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
                         />
                       </div>

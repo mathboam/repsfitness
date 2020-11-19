@@ -13,6 +13,7 @@ export default function Registration() {
   const [offer, setOffer] = useState("");
   const [payment, setPayment] = useState("");
   const [age, setAge] = useState(0);
+  const [startWeight, setStartWeight] = useState(0);
   const [counter, setCounter] = useState(0);
   return (
     <React.Fragment>
@@ -47,18 +48,41 @@ export default function Registration() {
               setcouter={setCounter}
               counter={counter}
               illness={illness}
+              startWeight={startWeight}
+              setStartWeight={setStartWeight}
               setIllness={setIllness}
             />
           ) : counter === 1 ? (
-            <Packages contact={contact} />
+            <Packages
+              contact={contact}
+              payment={payment}
+              setPayment={setPayment}
+              offer={offer}
+              setOffer={setOffer}
+              age={age}
+              email={email}
+              contact={contact}
+              startWeight={startWeight}
+              lastName={lastName}
+              firstName={firstName}
+              counter={counter}
+              setCounter={setCounter}
+              illness={illness}
+            />
           ) : (
             <WelcomPage
               payment={payment}
               setPayment={setPayment}
               offer={offer}
               setOffer={setOffer}
+              age={age}
+              email={email}
+              contact={contact}
+              lastName={lastName}
+              firstName={firstName}
               counter={counter}
               setCounter={setCounter}
+              illness={illness}
             />
           )}
           <div className="hidden sm:block">

@@ -1,15 +1,53 @@
 import React, { useState } from "react";
 import { Dialog, Pane } from "evergreen-ui";
+import { useMutation } from "@apollo/client";
+import { CREATE_MEMBER } from "../gql/jutsus/mutationJutsu";
 
 export default function Packages(props) {
-  const { offer, payment, counter, setCounter } = props;
+  const {
+    offer,
+    payment,
+    contact,
+    age,
+    firstName,
+    email,
+    illness,
+    lastName,
+    counter,
+    setCounter,
+    startWeight,
+  } = props;
 
   const [toggleVip, setToggleVip] = useState(false);
   const [toggleGroup, setToggleGroup] = useState(false);
   const [toggleLife, setToggleLife] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [momo, setMomo] = useState("");
+  const [program, setProgram] = useState("");
 
+  const [addMember, { loading }] = useMutation(CREATE_MEMBER);
+
+  const handleCreateMember = () => {
+    addMember({
+      variables: {
+        name: firstName + " " + lastName,
+        age: parseInt(age),
+        contact: contact,
+        dietRelatedIllness: illness,
+        email: email,
+        startWeight: parseInt(startWeight),
+        package: program,
+      },
+    })
+      .then((data) => {
+        console.log(data);
+        if (data) {
+          setCounter(counter + 1);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   const handleBack = () => {
     if (counter === 1) {
       setCounter(counter - 1);
@@ -19,13 +57,6 @@ export default function Packages(props) {
   const handleVipToggle = () => {
     setToggleVip(!toggleVip);
   };
-  //stepping only 160 a month, 40 a week for Ghana
-
-  // meal plans only a month, 40 a week for Ghana
-
-  //please call for uk prices
-
-  // 400 for a month 300 for 3 months
 
   return (
     <React.Fragment>
@@ -60,14 +91,21 @@ export default function Packages(props) {
                               class="text-center text-2xl leading-8 font-medium text-gray-900"
                               id="tier-hobby"
                             >
-                              VIP/SOLO
+                              Stepping Club
                             </h3>
+                            <h3
+                              class="text-center text-xl leading-8 font-medium text-gray-900"
+                              id="tier-hobby"
+                            >
+                              Stepping Only
+                            </h3>
+
                             <div class="mt-4 flex items-center justify-center">
                               <span class="px-3 flex items-start text-6xl leading-none tracking-tight text-gray-900">
                                 <span class="mt-2 mr-2 text-4xl font-medium">
                                   &#x20B5;
                                 </span>
-                                <span class="font-extrabold">200</span>
+                                <span class="font-extrabold">50</span>
                               </span>
                               <span class="text-xl leading-7 font-medium text-gray-500">
                                 /week
@@ -94,8 +132,7 @@ export default function Packages(props) {
                                 </svg>
                               </div>
                               <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                Weekly face to face / zoom meetings with Reps
-                                Life coach
+                                Walk with Reps fun day
                               </p>
                             </li>
                             <li class="mt-4 flex items-start">
@@ -115,7 +152,7 @@ export default function Packages(props) {
                                 </svg>
                               </div>
                               <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                Direct interaction with Reps diet coach
+                                Tracking of activities
                               </p>
                             </li>
                             <li class="mt-4 flex items-start">
@@ -135,7 +172,7 @@ export default function Packages(props) {
                                 </svg>
                               </div>
                               <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                Personalised meal plans
+                                Daily activities and challenges
                               </p>
                             </li>
                             <li class="mt-4 flex items-start">
@@ -155,7 +192,7 @@ export default function Packages(props) {
                                 </svg>
                               </div>
                               <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                Phone contact with diet coach
+                                Phone contact with step coach
                               </p>
                             </li>
                           </ul>
@@ -164,12 +201,13 @@ export default function Packages(props) {
                               <button
                                 onClick={(e) => {
                                   e.preventDefault();
+                                  setProgram("Stepping_Only");
                                   handleVipToggle();
                                 }}
                                 class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150"
                                 aria-describedby="tier-hobby"
                               >
-                                Start your trial
+                                Select
                               </button>
                             </div>
                           </div>
@@ -193,14 +231,14 @@ export default function Packages(props) {
                             class="text-center text-3xl leading-9 font-semibold text-gray-900 sm:-mx-6"
                             id="tier-growth"
                           >
-                            Group Membership
+                            Stepping and Prepping
                           </h3>
                           <div class="mt-4 flex items-center justify-center">
                             <span class="px-3 flex items-start text-6xl leading-none tracking-tight text-gray-900 sm:text-6xl">
                               <span class="mt-2 mr-2 text-4xl font-medium">
                                 &#x20B5;
                               </span>
-                              <span class="font-extrabold">95</span>
+                              <span class="font-extrabold">100</span>
                             </span>
                             <span class="text-2xl leading-8 font-medium text-gray-500">
                               /week
@@ -360,13 +398,17 @@ export default function Packages(props) {
                         </ul>
                         <div class="mt-10">
                           <div class="rounded-lg shadow-md">
-                            <a
-                              href="#"
+                            <button
+                              onClick={(e) => {
+                                e.preventDefault();
+                                setProgram("Stepping_Prepping");
+                                handleVipToggle();
+                              }}
                               class="block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition ease-in-out duration-150"
                               aria-describedby="tier-growth"
                             >
-                              Start your trial
-                            </a>
+                              Select
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -381,14 +423,20 @@ export default function Packages(props) {
                               class="text-center text-2xl leading-8 font-medium text-gray-900"
                               id="tier-scale"
                             >
-                              Life Coaching
+                              Prepping & Diet Club
+                            </h3>
+                            <h3
+                              class="text-center text-xl leading-8 font-medium text-gray-900"
+                              id="tier-scale"
+                            >
+                              Prepping Only
                             </h3>
                             <div class="mt-4 flex items-center justify-center">
                               <span class="px-3 flex items-start text-6xl leading-none tracking-tight text-gray-900">
                                 <span class="mt-2 mr-2 text-4xl font-medium">
                                   &#x20B5;
                                 </span>
-                                <span class="font-extrabold">250</span>
+                                <span class="font-extrabold">50</span>
                               </span>
                               <span class="text-xl leading-7 font-medium text-gray-500">
                                 /week
@@ -415,8 +463,7 @@ export default function Packages(props) {
                                 </svg>
                               </div>
                               <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                Face to face/zoom/phone meeting with Reps life
-                                coach
+                                Zoom/phone meetings with prepping coach
                               </p>
                             </li>
                             <li class="mt-4 flex items-start">
@@ -436,7 +483,7 @@ export default function Packages(props) {
                                 </svg>
                               </div>
                               <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                Weekly consultations
+                                Weekly meal plans
                               </p>
                             </li>
                             <li class="mt-4 flex items-start">
@@ -476,19 +523,23 @@ export default function Packages(props) {
                                 </svg>
                               </div>
                               <p class="ml-3 text-base leading-6 font-medium text-gray-500">
-                                Control of negative eating patterns
+                                Weekly weigh-in
                               </p>
                             </li>
                           </ul>
                           <div class="mt-8">
                             <div class="rounded-lg shadow-md">
-                              <a
-                                href="#"
+                              <button
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  setProgram("Prepping_Only");
+                                  handleVipToggle();
+                                }}
                                 class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150"
                                 aria-describedby="tier-scale"
                               >
-                                Start your trial
-                              </a>
+                                Select
+                              </button>
                             </div>
                           </div>
                         </div>
@@ -517,39 +568,26 @@ export default function Packages(props) {
           title="Payment"
           onCloseComplete={() => {
             setToggleVip(false);
-            setLoading(false);
           }}
           isConfirmLoading={loading}
-          onConfirm={() => setLoading(true)}
-          confirmLabel={loading ? "Loading..." : "Confirm Loading"}
+          onConfirm={() => handleCreateMember()}
+          confirmLabel={loading ? "Loading..." : "Confirm Payment"}
         >
           <div>
-            <label
-              htmlFor="phone_number"
-              className="block text-sm font-medium leading-5 text-gray-700"
-            >
-              Mobile Money Number
-              <span className={"text-gray-400"}>(verify your momo number)</span>
-            </label>
-            <div className="mt-1 relative rounded-md shadow-sm">
-              <div className="absolute inset-y-0 left-0 flex items-center">
-                <select
-                  aria-label="Country"
-                  className="form-select h-full py-0 pl-3 pr-7 border-transparent bg-transparent text-gray-500 sm:text-sm sm:leading-5"
-                >
-                  <option>GH</option>
-                </select>
-              </div>
-              <input
-                id="phone_number"
-                defaultValue={props.contact}
-                onChange={(e) => {
-                  setMomo(e.target.value);
-                }}
-                className="form-input border p-1 focus:outline-none block w-full pl-16 sm:text-sm sm:leading-5"
-                placeholder="+233 244 292 2323"
-              />
-            </div>
+            <p>
+              You have selected the {program} program.
+              <br />
+              <br />
+              Our gateway system for mobile money is under maintenance but you
+              can make your payments to this mtn number <b>0550702382</b> with a
+              reference of <b>REPS FITNESS</b> .
+              <br />
+              <br />
+              An email containing your membership details will be sent to you
+              after payment confirmation.
+              <br />
+              Hit the confirm button after payment has been made.
+            </p>
           </div>
         </Dialog>
       </div>

@@ -1,11 +1,13 @@
 const { memberModel } = require("./model");
 
 async function getMember({ memberId }) {
+  console.log(memberId);
   const doc = await memberModel
     .findOne({
       _id: memberId,
     })
-    .populate("payment");
+    .populate("images");
+  console.log(doc);
   return doc;
 }
 
@@ -24,7 +26,6 @@ async function getMembers({
 }
 
 async function createMember({ input }) {
-  console.log("HELLO");
   try {
     const newMember = new memberModel({
       ...input,

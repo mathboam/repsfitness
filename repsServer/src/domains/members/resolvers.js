@@ -20,7 +20,6 @@ module.exports = {
   },
   Mutation: {
     addMember: async (_, args) => {
-      console.log("cool boy");
       try {
         const results = await createMember(args);
         return results;

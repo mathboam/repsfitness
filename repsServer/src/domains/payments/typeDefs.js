@@ -5,14 +5,16 @@ module.exports = gql`
     _id: ID
     amount: Int
     transactionId: ID
-    from: String
+    phone: String
     createdAt: Date
     updatedAt: Date
   }
   input addPaymentInput {
     amount: Int
     transactionId: ID
-    from: String
+    phone: String
+    email: String
+    provider: String
   }
 
   input getPaymentInput {

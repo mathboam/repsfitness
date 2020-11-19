@@ -20,33 +20,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d3c302-3312-400f-a3ff-8fe854ffed93" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/repsServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/members/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/members/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/members/model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/members/resolvers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/members/typeDefs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/payments/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/payments/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/payments/model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/payments/paymentsJutsu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/payments/resolvers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/payments/typeDefs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsclient/src/pages/registration/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repsclient/src/pages/registration/registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsclient/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/Hooks/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/Hooks/useOutsideAlerter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/Hooks/useStorage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/Layout/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/ProgressBar/progressBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/comps/Transition/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/firebase/.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/gql/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/gql/mutations/stepsUpload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Dashboard/Dashboard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Dashboard/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Steps/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Steps/steps.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Weights/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/pages/Weights/weights.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/src/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../memberdashboard/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/images/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/images/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/images/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/images/resolvers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/images/typeDefs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/payment/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/repsdashboard.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/src/comps/Loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/src/comps/modals/WeightsModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/src/firebase/.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/src/gql/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/src/gql/queryJutsu/weightsjutsu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repsdashboard/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/members/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/members/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/members/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/members/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/members/resolvers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/members/resolvers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/members/typeDefs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/members/typeDefs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/payments/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/payments/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/payments/paymentsJutsu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/payments/typeDefs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/payments/typeDefs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../repsclient/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repsclient/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/components/Personal.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/components/Personal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/components/WelcomPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/components/WelcomPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/components/packages.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/components/packages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/gql/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/gql/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/gql/jutsus/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/gql/jutsus/mutationJutsu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../repsclient/src/pages/Programs/Programs.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/pages/Programs/Programs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsclient/src/pages/registration/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsclient/src/pages/registration/registration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsdashboard/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../repsdashboard/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsdashboard/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsdashboard/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsdashboard/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../repsdashboard/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsdashboard/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../repsdashboard/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repsdashboard/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../repsdashboard/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +141,16 @@
       <workItem from="1604478412896" duration="15913000" />
       <workItem from="1604498618205" duration="5239000" />
       <workItem from="1604579626646" duration="947000" />
+      <workItem from="1605007306198" duration="7757000" />
+      <workItem from="1605022422029" duration="1355000" />
+      <workItem from="1605095136345" duration="17000" />
+      <workItem from="1605101253649" duration="831000" />
+      <workItem from="1605110615607" duration="6137000" />
+      <workItem from="1605128440740" duration="328000" />
+      <workItem from="1605631995226" duration="3859000" />
+      <workItem from="1605650721175" duration="322000" />
+      <workItem from="1605655272258" duration="2241000" />
+      <workItem from="1605808405646" duration="1385000" />
     </task>
     <servers />
   </component>
@@ -128,9 +173,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1658" y="23" key="SettingsEditor" timestamp="1604479797904">
-      <screen x="1280" y="0" width="1360" height="768" />
+    <state x="1803" y="23" key="SettingsEditor" timestamp="1605013666054">
+      <screen x="1440" y="0" width="1360" height="768" />
     </state>
     <state x="1658" y="23" key="SettingsEditor/0.0.1280.800/1280.0.1360.768@1280.0.1360.768" timestamp="1604479797904" />
+    <state x="1803" y="23" key="SettingsEditor/1440.0.1360.768/0.0.1440.900@1440.0.1360.768" timestamp="1605013666054" />
+    <state x="1444" y="92" width="670" height="676" key="search.everywhere.popup" timestamp="1605007529667">
+      <screen x="1440" y="0" width="1360" height="768" />
+    </state>
+    <state x="1444" y="92" width="670" height="676" key="search.everywhere.popup/1440.0.1360.768/0.0.1440.900@1440.0.1360.768" timestamp="1605007529667" />
   </component>
 </project>
