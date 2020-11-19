@@ -29,8 +29,8 @@ export default function Registration() {
         </div>
 
         <div
-          className={`h-full border-t justify-center items-center ${
-            counter === 2 ? "p-2" : "p-24"
+          className={`h-full w-full border-t justify-center items-center ${
+            counter === 2 ? "lg:p-2" : "lg:p-24"
           }`}
         >
           {counter === 0 ? (
