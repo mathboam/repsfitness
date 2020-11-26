@@ -8,7 +8,7 @@ export default function LandingPage() {
   const images = ["./test2.jpg", "./test3.jpg", "./test4.jpg", "./test6.jpg"];
   return (
     <React.Fragment>
-      <div className={"md:w-screen border-4"}>
+      <div className={"md:w-screen"}>
         <NavBar />
         {/*before & after*/}
 
@@ -50,11 +50,8 @@ export default function LandingPage() {
             className="mt-12 sm:mt-12 md:mt-12 sm:ml-3 flex  justify-center items-center"
             data-aos={"fade-up"}
           >
-            <Link
-              to={"/testimonials"}
-              className="w-full flex items-center justify-center px-8 py-3 border-transparent text-base leading-6 font-extrabold rounded-md text-blue bg-gray-900 hover:text-white hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-            >
-              See More
+            <Link className="w-full flex items-center justify-center px-8 py-3 border-transparent text-base leading-6 font-extrabold rounded-md text-blue bg-gray-900 hover:text-white hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+              Register Now
             </Link>
           </div>
         </div>
@@ -97,7 +94,7 @@ export default function LandingPage() {
                 "xl:text-2xl tracking-widest mt-4 header text-center text-xl tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-2xl"
               }
             >
-              Stepping
+              Stepping Club
             </h1>
             <div className={""}>
               <div
@@ -163,7 +160,7 @@ export default function LandingPage() {
                   "xl:text-2xl tracking-widest mt-4 header text-center text-xl tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-2xl"
                 }
               >
-                Prepping
+                Diet Club
               </h1>
 
               {/*Fitness Class section */}
@@ -286,7 +283,7 @@ export default function LandingPage() {
                   "xl:text-2xl tracking-widest mt-12 header text-center text-xl tracking-tight z-20 leading-10 font-bold text-white sm:text-xl sm:leading-none md:text-2xl"
                 }
               >
-                Monthly Marathons(Optional)
+                Reps Fun Walking Day(Optional)
               </h1>
               <h1
                 className={
@@ -384,23 +381,14 @@ export default function LandingPage() {
             A confidential,one on one service to explore compulsory eating,
             binge eating, yoyo eating and many more.
           </p>
-          <div className={"flex w-4/5 flex-row"} data-aos={"fade-left"}>
+          <div className={"flex w-full flex-row"} data-aos={"fade-left"}>
             <div className={"w-auto flex flex-wrap boxShadow"}>
-              <img src={"./lifec.jpeg"} className={"w-auto h-auto"} />
+              <img src={"./lifec.jpeg"} className={"w-auto h-full"} />
             </div>
             <div
               className={"justify-center flex-1 items-center flex"}
               data-aos={"fade-up"}
-            >
-              <Link
-                to={"/lifecoaching"}
-                className={
-                  "p-2 px-4 w-auto text-center rounded-full bg-purple-600 text-white leading-10 font-bold"
-                }
-              >
-                JOIN US NOW!......
-              </Link>
-            </div>
+            ></div>
           </div>
 
           <p
@@ -411,34 +399,6 @@ export default function LandingPage() {
             The Life coach will walk you through the issues which mostly trigger
             people's behavior to over eat.
           </p>
-        </div>
-
-        {/*reps for men*/}
-        <div className={"flex justify-center items-center my-12 flex-col"}>
-          <h2 className="text-2xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-2xl sm:leading-none md:text-2xl">
-            Reps Fitness Ghana
-          </h2>
-          <h2 className={"bg-gray-900 mt-8 p-4 text-2lx  text-white"}>
-            {" "}
-            FOR MEN{" "}
-          </h2>
-        </div>
-        <div className={"flex justify-center ite-center"}>
-          <div className={"w-4/5 flex flex-wrap  boxShadow"}>
-            <img src={"./bigbelly.jpeg"} className={"w-auto h-auto"} />
-          </div>
-        </div>
-
-        <div
-          className="mt-12 sm:mt-12 md:mt-12 sm:ml-3 flex justify-center items-center"
-          data-aos={"fade-up"}
-        >
-          <Link
-            to={"/testimonials"}
-            className="w-auto flex items-center justify-center px-8 py-3 border-transparent text-base leading-6 font-extrabold rounded-md text-blue bg-gray-900 hover:text-white hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-          >
-            See More...
-          </Link>
         </div>
 
         <Footer />

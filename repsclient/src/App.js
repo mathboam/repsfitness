@@ -15,13 +15,14 @@ function App() {
   useEffect(() => {
     AOS.init({ duration: 2000 });
     AOS.refresh();
+    document.title = "Reps Fitness Ghana";
   });
   return (
     <React.Fragment>
       <Router>
         <Switch>
           <Route exact path={"/"}>
-            <LandingPage />
+            <Registration />
           </Route>
           <Route path={"/programs"}>
             <Programs />
@@ -38,8 +39,8 @@ function App() {
           <Route path={"/accountability"}>
             <Accountability />
           </Route>
-          <Route path={"/register"}>
-            <Registration />
+          <Route path={"/home"}>
+            <LandingPage />
           </Route>
         </Switch>
       </Router>

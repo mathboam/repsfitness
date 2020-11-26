@@ -21,6 +21,8 @@ const CREATE_MEMBER = gql`
   mutation AddMember(
     $name: String
     $age: Int
+    $email: String
+    $profile: String
     $dietRelatedIllness: String
     $package: Package
     $startWeight: Int
@@ -30,6 +32,8 @@ const CREATE_MEMBER = gql`
       input: {
         name: $name
         age: $age
+        email: $email
+        profile: $profile
         dietRelatedIllness: $dietRelatedIllness
         package: $package
         contact: $contact

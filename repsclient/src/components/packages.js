@@ -7,6 +7,7 @@ export default function Packages(props) {
   const {
     offer,
     payment,
+    profile,
     contact,
     age,
     firstName,
@@ -19,9 +20,6 @@ export default function Packages(props) {
   } = props;
 
   const [toggleVip, setToggleVip] = useState(false);
-  const [toggleGroup, setToggleGroup] = useState(false);
-  const [toggleLife, setToggleLife] = useState(false);
-  const [momo, setMomo] = useState("");
   const [program, setProgram] = useState("");
 
   const [addMember, { loading }] = useMutation(CREATE_MEMBER);
@@ -31,6 +29,7 @@ export default function Packages(props) {
       variables: {
         name: firstName + " " + lastName,
         age: parseInt(age),
+        profile: profile,
         contact: contact,
         dietRelatedIllness: illness,
         email: email,

@@ -573,23 +573,8 @@ export default function Programs(props) {
                   "mt-12 text-gray-600 text-center md:text-left tracking-wider leading-loose"
                 }
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-                architecto commodi consequuntur dignissimos dolores eligendi
-                eveniet ex explicabo laudantium, magni minima neque nostrum odio
-                rem, repellat repudiandae ullam ut veritatis? Lorem ipsum dolor
-                sit amet, consectetur adipisicing elit. Dignissimos inventore
-                itaque iure officiis sequi? Atque distinctio eaque iste, odio
-                rem reprehenderit sunt! Exercitationem facere hic magni, nulla
-                odit officiis rerum.Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Alias architecto commodi consequuntur
-                dignissimos dolores eligendi eveniet ex explicabo laudantium,
-                magni minima neque nostrum odio rem, repellat repudiandae ullam
-                ut veritatis? Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Dignissimos inventore itaque iure officiis
-                sequi? Atque distinctio eaque iste, odio rem reprehenderit sunt!
-                Exercitationem facere hic magni, nulla odit officiis rerum.
-                sunt! Exercitationem facere hic magni, nulla odit officiis
-                rerum.
+                Skip within your comfort while you burn calories and build
+                muscles to help put your body to shape
               </p>
             </div>
             <div
@@ -635,22 +620,10 @@ export default function Programs(props) {
               "mt-12 text-gray-600 text-center tracking-wider leading-loose"
             }
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-            architecto commodi consequuntur dignissimos dolores eligendi eveniet
-            ex explicabo laudantium, magni minima neque nostrum odio rem,
-            repellat repudiandae ullam ut veritatis? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Dignissimos inventore itaque iure
-            officiis sequi? Atque distinctio eaque iste, odio rem reprehenderit
-            sunt! Exercitationem facere hic magni, nulla odit officiis
-            rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Alias architecto commodi consequuntur dignissimos dolores eligendi
-            eveniet ex explicabo laudantium, magni minima neque nostrum odio
-            rem, repellat repudiandae ullam ut veritatis? Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Dignissimos inventore itaque
-            iure officiis sequi? Atque distinctio eaque iste, odio rem
-            reprehenderit sunt! Exercitationem facere hic magni, nulla odit
-            officiis rerum. sunt! Exercitationem facere hic magni, nulla odit
-            officiis rerum.
+            Reps fun walking day is indeed a fun activity at Reps where we join
+            our stepping coach as he takes us for a walk. Our coach motivates
+            and makes it fun. Members join the live stream and get connected to
+            the stepping coach.
           </p>
         </div>
 
@@ -690,23 +663,8 @@ export default function Programs(props) {
                   "mt-12 text-gray-600 text-left tracking-wider leading-loose"
                 }
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-                architecto commodi consequuntur dignissimos dolores eligendi
-                eveniet ex explicabo laudantium, magni minima neque nostrum odio
-                rem, repellat repudiandae ullam ut veritatis? Lorem ipsum dolor
-                sit amet, consectetur adipisicing elit. Dignissimos inventore
-                itaque iure officiis sequi? Atque distinctio eaque iste, odio
-                rem reprehenderit sunt! Exercitationem facere hic magni, nulla
-                odit officiis rerum.Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Alias architecto commodi consequuntur
-                dignissimos dolores eligendi eveniet ex explicabo laudantium,
-                magni minima neque nostrum odio rem, repellat repudiandae ullam
-                ut veritatis? Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Dignissimos inventore itaque iure officiis
-                sequi? Atque distinctio eaque iste, odio rem reprehenderit sunt!
-                Exercitationem facere hic magni, nulla odit officiis rerum.
-                sunt! Exercitationem facere hic magni, nulla odit officiis
-                rerum.
+                A weekly weigh - in is sent to our administrator to keep track
+                of every single calorie burnt
               </p>
             </div>
           </div>
@@ -726,22 +684,8 @@ export default function Programs(props) {
               "mt-12 text-gray-600 text-center tracking-wider leading-loose"
             }
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-            architecto commodi consequuntur dignissimos dolores eligendi eveniet
-            ex explicabo laudantium, magni minima neque nostrum odio rem,
-            repellat repudiandae ullam ut veritatis? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Dignissimos inventore itaque iure
-            officiis sequi? Atque distinctio eaque iste, odio rem reprehenderit
-            sunt! Exercitationem facere hic magni, nulla odit officiis
-            rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Alias architecto commodi consequuntur dignissimos dolores eligendi
-            eveniet ex explicabo laudantium, magni minima neque nostrum odio
-            rem, repellat repudiandae ullam ut veritatis? Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Dignissimos inventore itaque
-            iure officiis sequi? Atque distinctio eaque iste, odio rem
-            reprehenderit sunt! Exercitationem facere hic magni, nulla odit
-            officiis rerum. sunt! Exercitationem facere hic magni, nulla odit
-            officiis rerum.
+            For private consultations, call our number and arrange for your
+            schedules
           </p>
           <div
             data-aos={"fade-up"}
@@ -781,22 +725,8 @@ export default function Programs(props) {
               "mt-12 text-gray-600 text-center tracking-wider leading-loose"
             }
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-            architecto commodi consequuntur dignissimos dolores eligendi eveniet
-            ex explicabo laudantium, magni minima neque nostrum odio rem,
-            repellat repudiandae ullam ut veritatis? Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Dignissimos inventore itaque iure
-            officiis sequi? Atque distinctio eaque iste, odio rem reprehenderit
-            sunt! Exercitationem facere hic magni, nulla odit officiis
-            rerum.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Alias architecto commodi consequuntur dignissimos dolores eligendi
-            eveniet ex explicabo laudantium, magni minima neque nostrum odio
-            rem, repellat repudiandae ullam ut veritatis? Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Dignissimos inventore itaque
-            iure officiis sequi? Atque distinctio eaque iste, odio rem
-            reprehenderit sunt! Exercitationem facere hic magni, nulla odit
-            officiis rerum. sunt! Exercitationem facere hic magni, nulla odit
-            officiis rerum.
+            Everyday steps are converted to calories lost thereby keeping track
+            of Every calorie lost
           </p>
         </div>
 
